@@ -1532,7 +1532,7 @@ nav.ds_tabs .nav-tabs .nav-link.active {
   padding: 15px 0;
 }
 
-.dc_ul li a{
+.dc_ul li a {
   font-size: 13px;
   padding: 3px 0;
   color: #d1d1d1;
@@ -1555,7 +1555,7 @@ nav.ds_tabs .nav-tabs .nav-link.active {
 
 /* owl home dash start*/
 
-.owl-nav > button {
+.owl-nav>button {
   margin-top: -26px;
   position: absolute;
   top: 60px;
@@ -1568,11 +1568,13 @@ nav.ds_tabs .nav-tabs .nav-link.active {
   color: #54ff65;
   font-weight: 900;
 }
+
 .owl-theme .owl-nav [class*='owl-']:hover {
   background: transparent;
   color: #54ff65;
   text-decoration: none;
 }
+
 .owl-nav .owl-prev {
   left: -30px;
 }
@@ -2146,9 +2148,11 @@ nav.ds_tabs .nav-tabs .nav-link.active {
 .group_dashboard2 .gd_item1 input[type=search]:focus {
   border: 1px solid #575757;
 }
+
 .group_dashboard3 .create_a_group {
   padding-top: 50px;
 }
+
 .group_dashboard3 .cag_search input {
   background: transparent;
   border: none;
@@ -2162,6 +2166,29 @@ nav.ds_tabs .nav-tabs .nav-link.active {
   color: #FFF;
   font-weight: 300;
 }
+
+.cag_btn .btn6 {
+  background: #54ff65;
+  padding: 15px 25px 15px 20px;
+  font-family: 'Poppins';
+  font-size: 20px;
+  color: #000;
+  letter-spacing: -.5px;
+  border-radius: 5px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border:none;
+}
+
+
+.cag_btn .btn6 img {
+  width: 38px;
+}
+
+
 
 .suggestion_group {
   background-color: rgba(28, 28, 36, 1);
@@ -2208,12 +2235,114 @@ nav.ds_tabs .nav-tabs .nav-link.active {
 /* create group section start */
 
 .cag_upload_header_image {
-  padding: 30px;
+  background: rgb(84, 255, 101);
+  background: linear-gradient(270deg, rgba(84, 255, 101, 1) 0%, rgba(0, 0, 0, 1) 37%, rgba(0, 0, 0, 1) 63%, rgba(84, 255, 101, 1) 100%);
+  padding: 40px;
   text-align: center;
+  margin: 30px 0;
+  border-radius: 10px;
+  position: relative;
 }
-.cag_upload_header_image .cuhi_inner h3{
-    color: #54ff65;
+
+.cag_upload_header_image #imageContainer3 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
+.cag_upload_header_image #imageContainer3 img {
+  height: 100%;
+  width: 100%;
+}
+
+.cag_upload_header_image .cuhi_inner h3 {
+  color: #54ff65;
+  letter-spacing: 2px;
+  font-size: 23px;
+
+}
+
+.cuhi_inner img {
+  width: 100px;
+  margin: 25px 0;
+}
+
+.file_upload_regis2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.file_upload_regis2 input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.create_a_group .cag2 textarea {
+  background-color: transparent;
+  width: 100%;
+  padding: 20px 22px;
+  border-radius: 10px;
+}
+
+.create_a_group .cag2 textarea::placeholder {
+  color: #54ff65;
+  letter-spacing: 2px;
+  font-size: 25px;
+  line-height: 100%;
+  font-family: "Orelega One", serif;
+}
+
+.create_a_group .search_people {
+  margin: 70px 0;
+  width: 60%;
+  position: relative;
+}
+
+.create_a_group .search_people input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 20px 5px;
+  border-bottom: 1px solid #ccc;
+
+}
+
+.search_people::before {
+  content: "";
+  height: 1px;
+  background-color: #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.create_a_group .search_people input::placeholder {
+  color: #54ff65;
+  letter-spacing: 2px;
+  font-size: 25px;
+  line-height: 100%;
+  font-family: "Orelega One", serif;
+}
+
+.create_a_group .search_people i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  color: #54ff65;
+  font-weight: 500;
+  font-size: 37px;
+}
+
+
+
 /* create group section end*/
 
 
@@ -2289,7 +2418,7 @@ nav.ds_tabs .nav-tabs .nav-link.active {
   color: #000;
   border-radius: 5px;
   font-weight: 600;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
@@ -2458,15 +2587,33 @@ nav.ds_tabs .nav-tabs .nav-link.active {
 .chat_dashboard h2 {
   font-size: 42px;
 }
+
 .chat_dashboard .chat_left {
   overflow-y: scroll;
-  height: 560px;
+  height: 610px;
   overflow-x: hidden;
 }
+
+.chat_dashboard .chat_left::-webkit-scrollbar-track {
+  background-color: rgba(35, 35, 35, 1);
+}
+
+.chat_dashboard .chat_left::-webkit-scrollbar {
+  width: 13px;
+}
+
+.chat_dashboard .chat_left::-webkit-scrollbar-thumb {
+  border-radius: 0;
+}
+
 .chat_dashboard .cl_item {
-  margin: 40px 0 0;
+  margin: 40px 0 30px;
 
   position: relative;
+}
+
+.chat-right .fade:not(.show) {
+  display: none;
 }
 
 .chat_dashboard .cl_item_inner {
@@ -2501,7 +2648,7 @@ nav.ds_tabs .nav-tabs .nav-link.active {
 }
 
 .chat-right .cr-1 {
-  padding: 8px 40px;
+  padding: 8px 20px 8px 40px;
   background-color: #54ff65;
   gap: 70px;
   position: relative;
@@ -2509,6 +2656,7 @@ nav.ds_tabs .nav-tabs .nav-link.active {
   left: 0;
   right: 0;
   z-index: 11111;
+  height: 60px;
 }
 
 .chat-right .cr-1 .cr_1_n {
@@ -2517,11 +2665,19 @@ nav.ds_tabs .nav-tabs .nav-link.active {
 }
 
 .chat-right .cr-1 img {
-  width: 45px;
+  width: 35px;
 }
 
 .chat-right .cr-1 h3 {
   font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.cr-1 h3 span {
+  font-weight: 400;
+  font-size: 13px;
 }
 
 .jobs2-main-body h3,
@@ -2668,14 +2824,17 @@ div.chat-right h4 {
 .dashboard_section.my_pref .btn-theme2 {
   padding: 8px 25px;
 }
+
 .genr_dash {
   padding-top: 30px;
 }
+
 .genr_dash form {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .genr_item {
   display: flex;
   gap: 50px;
@@ -2709,9 +2868,11 @@ div.chat-right h4 {
   align-items: center;
   padding: 15px 0;
 }
+
 .mail_dash tr:last-child {
   padding-top: 60px;
 }
+
 .mail_dash tr th {
   width: 130px;
 }
