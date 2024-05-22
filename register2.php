@@ -488,8 +488,10 @@ include 'includes/header.php';
                                 <input type="checkbox">
                                 <label for="">I agree with terms of use</label>
                             </div>
-                            <button class="btn-theme2 mt-3" type="submit">Join<i
-                                    class="fa-solid fa-arrow-right-long"></i></button>
+                            <a href="dashboard_sub_pkgs.php" class="button-container-2">
+                                <span class="mas">Join<i class="fa-solid fa-arrow-right-long"></i></span>
+                                <button type="button" name="Hover">Join<i class="fa-solid fa-arrow-right-long"></i></button>
+                            </a>
                         </div>
                     </div>
                 </form>
@@ -501,7 +503,7 @@ include 'includes/header.php';
 include 'includes/footer.php';
 ?>
 <script>
-    AOS.init({
-            once: true,
-        });
+AOS.init({
+    once: true,
+});
 </script>

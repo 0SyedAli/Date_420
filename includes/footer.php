@@ -46,7 +46,7 @@
                                 <li class="p-0">
                                     <h4><span>Links</span></h4>
                                 </li>
-                                <li><a href="matchmaking.php">Hotlist</a></li>
+                                <li><a href="dashboard.php">Hotlist</a></li>
                                 <li><a href="dashboard_matches.php">My Matches</a></li>
                                 <li><a href="dashboard_search.php">Search</a></li>
                             </ul>
@@ -66,7 +66,7 @@
                                 <li class="p-0">
                                     <h4><span>Connections</span></h4>
                                 </li>
-                                <li><a href="javascript:;">Chat</a></li>
+                                <li><a href="dashboard_chat.php">Chat</a></li>
                                 <li><a href="dashboard_group.php">Groups</a></li>
                                 <li><a href="my-preference.php">My Preferences</a></li>
                             </ul>

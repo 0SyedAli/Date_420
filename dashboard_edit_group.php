@@ -12,9 +12,8 @@ include 'includes/header_dash.php';
                         <button class="nav-link " id="nav-dashboard-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-dashboard" type="button" role="tab" aria-controls="nav-dashboard"
                             aria-selected="true">Dashboard</button>
-                        <button class="nav-link active" id="nav-photo-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-photo" type="button" role="tab" aria-controls="nav-photo"
-                            aria-selected="false">Photo</button>
+                        <button class="nav-link" id="nav-photo-tab" data-bs-toggle="tab" data-bs-target="#nav-photo"
+                            type="button" role="tab" aria-controls="nav-photo" aria-selected="false">Photo</button>
                         <button class="nav-link" id="nav-my-match-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-my-match" type="button" role="tab" aria-controls="nav-my-match"
                             aria-selected="false">My Matches</button>
@@ -23,15 +22,16 @@ include 'includes/header_dash.php';
                             aria-selected="false">Subscribe</button>
                         <button class="nav-link" id="nav-search-tab" data-bs-toggle="tab" data-bs-target="#nav-search"
                             type="button" role="tab" aria-controls="nav-search" aria-selected="false">Search</button>
-                        <button class="nav-link" id="nav-group-tab" data-bs-toggle="tab" data-bs-target="#nav-group"
-                            type="button" role="tab" aria-controls="nav-group" aria-selected="false">Groups</button>
+                        <button class="nav-link active" id="nav-group-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-group" type="button" role="tab" aria-controls="nav-group"
+                            aria-selected="false">Groups</button>
                         <!-- <button class="nav-link" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
                             type="button" role="tab" aria-controls="nav-event" aria-selected="false">Events</button>
                         <button class="nav-link" id="nav-blog-tab" data-bs-toggle="tab" data-bs-target="#nav-blog"
                             type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blogs</button>
                         <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat"
                             type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button> -->
-                        <button class="nav-link" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
+                            <button class="nav-link" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
                             type="button" role="tab" aria-controls="nav-event" aria-selected="false">Events</button>
                         <button class="nav-link " id="nav-blog-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-blog" type="button" role="tab" aria-controls="nav-blog"
@@ -41,7 +41,7 @@ include 'includes/header_dash.php';
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade" id="nav-dashboard" role="tabpanel" aria-labelledby="nav-dashboard-tab"
+                    <div class="tab-pane fade   " id="nav-dashboard" role="tabpanel" aria-labelledby="nav-dashboard-tab"
                         tabindex="0">
                         <div class="item_dashboard">
                             <h2>My Dashboard</h2>
@@ -333,7 +333,7 @@ include 'includes/header_dash.php';
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade show active" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab"
+                    <div class="tab-pane fade" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab"
                         tabindex="0">
                         <div class="photo_dashboard">
                             <div class="row ">
@@ -1467,300 +1467,195 @@ include 'includes/header_dash.php';
                                     </tbody>
                                 </table>
                                 <div class="d-flex justify-content-end align-items-center">
-                                <div class="ds_btn d-flex justify-content-end align-items-center">
                                     <a href="dashboard_matches.php" class="button-container-2">
                                         <span class="mas">Search<i class="fa-solid fa-arrow-right-long"></i></span>
                                         <button type="button" name="Hover">Search<i
                                                 class="fa-solid fa-arrow-right-long"></i></button>
                                     </a>
                                 </div>
-                                </div>
                             </div>
                         </form>
                     </div>
-                    <div class="tab-pane fade" id="nav-group" role="tabpanel" aria-labelledby="nav-group-tab"
-                        tabindex="0">
-                        <div class="group_dashboard2">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <h2>Groups</h2>
-                                <div class="gd_item1">
-                                    <div class="gdi_search">
-                                        <input type="search" placeholder="Search Groups">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="tab-pane fade show active" id="nav-group" role="tabpanel"
+                        aria-labelledby="nav-group-tab" tabindex="0">
+                        <div class="group_dashboard3">
+                            <h2>Edit Group Details</h2>
+                            <div class="create_a_group edit_a_group">
+                                <form action="#;">
+                                    <div class="cag_search">
+                                        <input type="search" placeholder="High Forever">
+                                        <i class="fa-light fa-pen"></i>
                                     </div>
-                                    <a class="btn6" href="dashboard_create_group.php">
-                                        <img src="images/team.png" alt="">
-                                        Create Group</a>
-                                </div>
+                                    <div class="cag_upload_header_image1">
+                                        <div class="imageContainer4" id="imageContainer4">
+                                            <img class="img-fluid" id="uploadedImage4" src="images/gd2.png" alt="">
+                                        </div>
+                                        <div class="file_upload_tag">
+                                            <img class="img-fluid" src="images/create_group_icon.png" alt="">
+                                            <h4>Upload Group Header image</h4>
+                                        </div>
+                                        <div class="file_upload_regis2">
+                                            <input class="form-control formFile" type="file" id="formFile4"
+                                                accept="image/*">
+                                        </div>
+                                    </div>
+                                    <div class="gd2">
+                                        <div class="gd2_content">
+                                            <div class="gd2c_para">
+                                                <div class="pb-4 d-flex align-items-center justify-content-between">
+                                                    <h3>Group description</h3>
+                                                    <i class="fa-light fa-pen"></i>
+                                                </div>
+                                                <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                    ultrices
+                                                    eros in. Lobortis elementum nibh tellus molestie nunc. Libero nunc
+                                                    consequat interdum varius sit amet mattis vulputate. Duis at
+                                                    consectetur
+                                                    lorem donec massa. Eget nulla facilisi etiam dignissim diam quis
+                                                    enim
+                                                    lobortis condimentum lacinia quis. Pharetra convallis posuere morbi
+                                                    leo.
+                                                    Vestibulum lectus mauris ultrices eros in. Lobortis elementum nibh
+                                                    tellus molestie nunc. Libero nunc consequat interdum varius sit amet
+                                                    mattis vulputate. Duis at consectetur lorem donec massa. Eget nulla
+                                                    facilisi etiam dignissim diam quis enim lobortis condimentum lacinia
+                                                    quis.</p>
+                                                <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                    ultrices
+                                                    eros in. Lobortis elementum nibh tellus molestie nunc. Libero nunc
+                                                    consequat interdum varius sit amet mattis vulputate. Duis at
+                                                    consectetur
+                                                    lorem donec massa. Eget nulla facilisi etiam dignissim diam quis
+                                                    enim
+                                                    lobortis condimentum lacinia quis. Pharetra convalli</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search_people">
+                                        <input type="search" placeholder="Search people to add">
+                                        <i class="fa-regular fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="gd_members">
+                                        <h3>Group members</h3>
+                                        <div class="row gx-5 ">
+                                            <div class="col-4">
+                                                <div class="gdm_body">
+                                                    <div class="gdm_item">
+                                                        <img class="img-fluid" src="images/gd2_item1.svg" alt="">
+                                                        <p>Morgan</p>
+                                                    </div>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="gdm_body">
+                                                    <div class="gdm_item">
+                                                        <img class="img-fluid" src="images/gd2_item1.svg" alt="">
+                                                        <p>Morgan</p>
+                                                    </div>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="gdm_body">
+                                                    <div class="gdm_item">
+                                                        <img class="img-fluid" src="images/gd2_item1.svg" alt="">
+                                                        <p>Morgan</p>
+                                                    </div>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="gdm_body">
+                                                    <div class="gdm_item">
+                                                        <img class="img-fluid" src="images/gd2_item2.svg" alt="">
+                                                        <p>Stanley Burton</p>
+                                                    </div>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="gdm_body">
+                                                    <div class="gdm_item">
+                                                        <img class="img-fluid" src="images/gd2_item2.svg" alt="">
+                                                        <p>Stanley Burton</p>
+                                                    </div>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="gdm_body">
+                                                    <div class="gdm_item">
+                                                        <img class="img-fluid" src="images/gd2_item2.svg" alt="">
+                                                        <p>Stanley Burton</p>
+                                                    </div>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="gdm_body">
+                                                    <div class="gdm_item">
+                                                        <img class="img-fluid" src="images/gd2_item1.svg" alt="">
+                                                        <p>Allen Anderson</p>
+                                                    </div>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="gdm_body">
+                                                    <div class="gdm_item">
+                                                        <img class="img-fluid" src="images/gd2_item1.svg" alt="">
+                                                        <p>Allen Anderson</p>
+                                                    </div>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="gdm_body">
+                                                    <div class="gdm_item">
+                                                        <img class="img-fluid" src="images/gd2_item1.svg" alt="">
+                                                        <p>Allen Anderson</p>
+                                                    </div>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="gdm_body">
+                                                    <div class="gdm_item">
+                                                        <img class="img-fluid" src="images/gd2_item2.svg" alt="">
+                                                        <p>Lucas West</p>
+                                                    </div>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="gdm_body">
+                                                    <div class="gdm_item">
+                                                        <img class="img-fluid" src="images/gd2_item2.svg" alt="">
+                                                        <p>Lucas West</p>
+                                                    </div>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="gdm_body">
+                                                    <div class="gdm_item">
+                                                        <img class="img-fluid" src="images/gd2_item2.svg" alt="">
+                                                        <p>Lucas West</p>
+                                                    </div>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <a href="javascript:;" class="button-container-2">
+                                            <span class="mas">Save</span>
+                                            <button type="button" name="Hover">Save</button>
+                                        </a>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="suggestion_group">
-                                <div class="sg_head">
-                                    <div>
-                                        <h3>Suggested Groups</h3>
-                                        <p>Groups you might be interested in.</p>
-                                    </div>
-                                    <a href="#;">SEE ALL</a>
-                                </div>
-                                <div class="row g-0">
-                                    <div class="col-3">
-                                        <div class="sg_card">
-                                            <img src="images/sg_img1.svg" class="img-fluid" alt="">
-                                            <div class="sg_card_body">
-                                                <div class="scb3">
-                                                    <h4>Get high and become an astronaut</h4>
-                                                    <div class="scb_inner d-flex align-items-center">
-                                                        <h5>Texas</h5>
-                                                        <h5><span>• 2,351 Members</span></h5>
-                                                    </div>
-                                                </div>
-                                                <a href="dashboard_matches.php" class="button-container-2 d-flex">
-                                                    <span class="mas">Join Group</span>
-                                                    <button type="button" name="Hover">Join Group</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="sg_card">
-                                            <img src="images/sg_img2.svg" class="img-fluid" alt="">
-                                            <div class="sg_card_body">
-                                                <div class="scb3">
-                                                    <h4>Get high and become an astronaut</h4>
-                                                    <div class="scb_inner d-flex align-items-center">
-                                                        <h5>California</h5>
-                                                        <h5><span>• 1,23M Members</span></h5>
-                                                    </div>
-                                                </div>
-                                                <a href="dashboard_matches.php" class="button-container-2 d-flex">
-                                                    <span class="mas">Join Group</span>
-                                                    <button type="button" name="Hover">Join Group</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="sg_card">
-                                            <img src="images/sg_img4.svg" class="img-fluid" alt="">
-                                            <div class="sg_card_body">
-                                                <div class="scb3">
-                                                    <h4>Get high and become an astronaut</h4>
-                                                    <div class="scb_inner d-flex align-items-center">
-                                                        <h5>Alabama</h5>
-                                                        <h5><span>• 2,351 Members</span></h5>
-                                                    </div>
-                                                </div>
-                                                <a href="dashboard_matches.php" class="button-container-2 d-flex">
-                                                    <span class="mas">Join Group</span>
-                                                    <button type="button" name="Hover">Join Group</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="sg_card">
-                                            <img src="images/sg_img3.svg" class="img-fluid" alt="">
-                                            <div class="sg_card_body">
-                                                <div class="scb3">
-                                                    <h4>Get high and become an astronaut</h4>
-                                                    <div class="scb_inner d-flex align-items-center">
-                                                        <h5>New York</h5>
-                                                        <h5><span>• 124,213 Members</span></h5>
-                                                    </div>
-                                                </div>
-                                                <a href="dashboard_matches.php" class="button-container-2 d-flex">
-                                                    <span class="mas">Join Group</span>
-                                                    <button type="button" name="Hover">Join Group</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="suggestion_group mt-5">
-                                <div class="sg_head">
-                                    <div>
-                                        <h3>My Groups</h3>
-                                        <p>Groups you might be interested in.</p>
-                                    </div>
-                                    <a href="#;">SEE ALL</a>
-                                </div>
-                                <div class="row g-0">
-                                    <div class="col-3">
-                                        <div class="sg_card">
-                                            <img src="images/sg_img1.svg" class="img-fluid" alt="">
-                                            <div class="sg_card_body">
-                                                <div class="scb3">
-                                                    <h4>Get high and become an astronaut</h4>
-                                                    <div class="scb_inner d-flex align-items-center">
-                                                        <h5>Texas</h5>
-                                                        <h5><span>• 2,351 Members</span></h5>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex gap-2 scb_btn">
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
-                                                        <span class="mas">View Details</span>
-                                                        <button type="button" name="Hover">View Details</button>
-                                                    </a>
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
-                                                        <span class="mas">Start Chat</span>
-                                                        <button type="button" name="Hover">Start Chat</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="sg_card">
-                                            <img src="images/sg_img2.svg" class="img-fluid" alt="">
-                                            <div class="sg_card_body">
-                                                <div class="scb3">
-                                                    <h4>Get high and become an astronaut</h4>
-                                                    <div class="scb_inner d-flex align-items-center">
-                                                        <h5>Candidate</h5>
-                                                        <h5><span>• 1,23M Members</span></h5>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex gap-2 scb_btn">
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
-                                                        <span class="mas">View Details</span>
-                                                        <button type="button" name="Hover">View Details</button>
-                                                    </a>
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
-                                                        <span class="mas">Start Chat</span>
-                                                        <button type="button" name="Hover">Start Chat</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="sg_card">
-                                            <img src="images/sg_img4.svg" class="img-fluid" alt="">
-                                            <div class="sg_card_body">
-                                                <div class="scb3">
-                                                    <h4>Get high and become an astronaut</h4>
-                                                    <div class="scb_inner d-flex align-items-center">
-                                                        <h5>Owner</h5>
-                                                        <h5><span>• 2,351 Members</span></h5>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex gap-2 scb_btn">
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
-                                                        <span class="mas">View Details</span>
-                                                        <button type="button" name="Hover">View Details</button>
-                                                    </a>
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
-                                                        <span class="mas">Start Chat</span>
-                                                        <button type="button" name="Hover">Start Chat</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="sg_card">
-                                            <img src="images/sg_img3.svg" class="img-fluid" alt="">
-                                            <div class="sg_card_body">
-                                                <div class="scb3">
-                                                    <h4>Get high and become an astronaut</h4>
-                                                    <div class="scb_inner d-flex align-items-center">
-                                                        <h5>Candidate</h5>
-                                                        <h5><span>• 124,213 Members</span></h5>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex gap-2 scb_btn">
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
-                                                        <span class="mas">View Details</span>
-                                                        <button type="button" name="Hover">View Details</button>
-                                                    </a>
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
-                                                        <span class="mas">Start Chat</span>
-                                                        <button type="button" name="Hover">Start Chat</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- <div class="gd_item">
-                                <h3>Group 1</h3>
-                                <div class="row row_group">
-                                    <div class="col-3">
-                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
-                                            <div class="mm_d_cards">
-                                                <img class="img-fluid" src="images/md-card1.png" alt="">
-                                                <div class="mdCard_content">
-                                                    <h5>Name: Olivia</h5>
-                                                    <h5>Age: 29</h5>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-3">
-                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
-                                            <div class="mm_d_cards">
-                                                <img class="img-fluid" src="images/md-card12.png" alt="">
-                                                <div class="mdCard_content">
-                                                    <h5>Name: Olivia</h5>
-                                                    <h5>Age: 29</h5>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-3">
-                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
-                                            <div class="mm_d_cards">
-                                                <img class="img-fluid" src="images/md-card11.png" alt="">
-                                                <div class="mdCard_content">
-                                                    <h5>Name: Olivia</h5>
-                                                    <h5>Age: 29</h5>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-3">
-                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
-                                            <div class="mm_d_cards">
-                                                <img class="img-fluid" src="images/md-card10.png" alt="">
-                                                <div class="mdCard_content">
-                                                    <h5>Name: Olivia</h5>
-                                                    <h5>Age: 29</h5>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gd_item">
-                                <h3>Group 2</h3>
-                                <div class="row row_group">
-                                    <div class="col-3">
-                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
-                                            <div class="mm_d_cards">
-                                                <img class="img-fluid" src="images/md-card1.png" alt="">
-                                                <div class="mdCard_content">
-                                                    <h5>Name: Olivia</h5>
-                                                    <h5>Age: 29</h5>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-3">
-                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
-                                            <div class="mm_d_cards">
-                                                <img class="img-fluid" src="images/md-card12.png" alt="">
-                                                <div class="mdCard_content">
-                                                    <h5>Name: Olivia</h5>
-                                                    <h5>Age: 29</h5>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nav-event" role="tabpanel" aria-labelledby="nav-event-tab"
@@ -1836,66 +1731,6 @@ include 'includes/header_dash.php';
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="event_dash_sp event_dashboard">
-                            <h2>Events</h2>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-7">
-                                        <div class="edsp_left">
-                                            <div class="edsp_left_inner">
-                                                <img class="img-fluid" src="images/event_inner1.png" alt="">
-                                                <h3>Here is the history of how 420 got associated with smoking</h3>
-                                                <h5>March 13, 2024</h5>
-                                                <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
-                                                    ultrices eros in. Lobortis elementum nibh tellus molestie nunc.
-                                                    Libero nunc consequat interdum varius sit amet mattis vulputate.
-                                                    Duis at consectetur lorem donec massa. Eget nulla facilisi etiam
-                                                    dignissim diam quis enim lobortis condimentum lacinia quis.</p>
-                                                <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
-                                                    ultrices eros in. Lobortis elementum nibh tellus molestie nunc.
-                                                    Libero nunc consequat interdum varius sit amet mattis vulputate.
-                                                    Duis at consectetur lorem donec massa. Eget nulla facilisi etiam
-                                                    dignissim diam quis enim lobortis condimentum lacinia quis.Pharetra
-                                                    convallis posuere morbi leo. Vestibulum lectus mauris ultrices eros
-                                                    in. Lobortis elementum nibh tellus molestie nunc. Libero nunc
-                                                    consequat interdum varius sit amet mattis vulputate. Duis at
-                                                    consectetur lorem donec massa. Eget nulla facilisi etiam dignissim
-                                                    diam quis enim lobortis condimentum lacinia quis.</p>
-                                                <button class="btn btn-theme2 d-flex align-items-center gap-2">
-                                                    Get tickets<i class="fa-solid fa-arrow-right"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="blog_post_right">
-                                            <div class="bpr_inner d-flex align-items-center py-4">
-                                                <img class="img-fluid" src="images/bpr1.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="bpr_inner d-flex align-items-center py-4">
-                                                <img class="img-fluid" src="images/bpr2.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="tab-pane fade" id="nav-blog" role="tabpanel" aria-labelledby="nav-blog-tab"
                         tabindex="0">
@@ -2436,10 +2271,10 @@ include 'includes/header_dash.php';
                                                     <h3><span>28 Members</span></h3>
                                                 </div>
                                                 <div class="d-flex align-items-center gap-2">
-                                                   <img class="img-fluid" src="images/pic2.svg" alt="">
-                                                   <img class="img-fluid" src="images/pic2.svg" alt="">
-                                                   <img class="img-fluid" src="images/pic2.svg" alt="">
-                                                   <h3><span>More</span></h3>
+                                                    <img class="img-fluid" src="images/pic2.svg" alt="">
+                                                    <img class="img-fluid" src="images/pic2.svg" alt="">
+                                                    <img class="img-fluid" src="images/pic2.svg" alt="">
+                                                    <h3><span>More</span></h3>
                                                 </div>
                                                 <!-- <div class="cr_1_n">
                                                     <h4><span>Project Manager</span></h4>

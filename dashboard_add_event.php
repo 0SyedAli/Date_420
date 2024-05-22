@@ -12,9 +12,8 @@ include 'includes/header_dash.php';
                         <button class="nav-link " id="nav-dashboard-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-dashboard" type="button" role="tab" aria-controls="nav-dashboard"
                             aria-selected="true">Dashboard</button>
-                        <button class="nav-link active" id="nav-photo-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-photo" type="button" role="tab" aria-controls="nav-photo"
-                            aria-selected="false">Photo</button>
+                        <button class="nav-link" id="nav-photo-tab" data-bs-toggle="tab" data-bs-target="#nav-photo"
+                            type="button" role="tab" aria-controls="nav-photo" aria-selected="false">Photo</button>
                         <button class="nav-link" id="nav-my-match-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-my-match" type="button" role="tab" aria-controls="nav-my-match"
                             aria-selected="false">My Matches</button>
@@ -25,13 +24,12 @@ include 'includes/header_dash.php';
                             type="button" role="tab" aria-controls="nav-search" aria-selected="false">Search</button>
                         <button class="nav-link" id="nav-group-tab" data-bs-toggle="tab" data-bs-target="#nav-group"
                             type="button" role="tab" aria-controls="nav-group" aria-selected="false">Groups</button>
-                        <!-- <button class="nav-link" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
-                            type="button" role="tab" aria-controls="nav-event" aria-selected="false">Events</button>
+                        <!-- 
                         <button class="nav-link" id="nav-blog-tab" data-bs-toggle="tab" data-bs-target="#nav-blog"
-                            type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blogs</button>
+                        type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blogs</button>
                         <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat"
-                            type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button> -->
-                        <button class="nav-link" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
+                        type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button> -->
+                        <button class="nav-link active" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
                             type="button" role="tab" aria-controls="nav-event" aria-selected="false">Events</button>
                         <button class="nav-link " id="nav-blog-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-blog" type="button" role="tab" aria-controls="nav-blog"
@@ -41,8 +39,8 @@ include 'includes/header_dash.php';
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade" id="nav-dashboard" role="tabpanel" aria-labelledby="nav-dashboard-tab"
-                        tabindex="0">
+                    <div class="tab-pane fade   " id="nav-dashboard" role="tabpanel"
+                        aria-labelledby="nav-dashboard-tab" tabindex="0">
                         <div class="item_dashboard">
                             <h2>My Dashboard</h2>
                             <div class="row mb-5">
@@ -333,7 +331,7 @@ include 'includes/header_dash.php';
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade show active" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab"
+                    <div class="tab-pane fade" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab"
                         tabindex="0">
                         <div class="photo_dashboard">
                             <div class="row ">
@@ -1467,13 +1465,13 @@ include 'includes/header_dash.php';
                                     </tbody>
                                 </table>
                                 <div class="d-flex justify-content-end align-items-center">
-                                <div class="ds_btn d-flex justify-content-end align-items-center">
-                                    <a href="dashboard_matches.php" class="button-container-2">
-                                        <span class="mas">Search<i class="fa-solid fa-arrow-right-long"></i></span>
-                                        <button type="button" name="Hover">Search<i
-                                                class="fa-solid fa-arrow-right-long"></i></button>
-                                    </a>
-                                </div>
+                                    <div class="ds_btn d-flex justify-content-end align-items-center">
+                                        <a href="dashboard_matches.php" class="button-container-2">
+                                            <span class="mas">Search<i class="fa-solid fa-arrow-right-long"></i></span>
+                                            <button type="button" name="Hover">Search<i
+                                                    class="fa-solid fa-arrow-right-long"></i></button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -1763,7 +1761,7 @@ include 'includes/header_dash.php';
                             </div> -->
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="nav-event" role="tabpanel" aria-labelledby="nav-event-tab"
+                    <div class="tab-pane fade show active" id="nav-event" role="tabpanel" aria-labelledby="nav-event-tab"
                         tabindex="0">
                         <div class="event_dashboard">
                             <h2>Events</h2>
@@ -2436,10 +2434,10 @@ include 'includes/header_dash.php';
                                                     <h3><span>28 Members</span></h3>
                                                 </div>
                                                 <div class="d-flex align-items-center gap-2">
-                                                   <img class="img-fluid" src="images/pic2.svg" alt="">
-                                                   <img class="img-fluid" src="images/pic2.svg" alt="">
-                                                   <img class="img-fluid" src="images/pic2.svg" alt="">
-                                                   <h3><span>More</span></h3>
+                                                    <img class="img-fluid" src="images/pic2.svg" alt="">
+                                                    <img class="img-fluid" src="images/pic2.svg" alt="">
+                                                    <img class="img-fluid" src="images/pic2.svg" alt="">
+                                                    <h3><span>More</span></h3>
                                                 </div>
                                                 <!-- <div class="cr_1_n">
                                                     <h4><span>Project Manager</span></h4>
@@ -2575,6 +2573,7 @@ include 'includes/header_dash.php';
 include 'includes/footer.php';
 $page = 'dashboard';
 ?>
+
 
 <script>
 AOS.init({

@@ -30,9 +30,13 @@ include 'includes/header_dash.php';
                             type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blogs</button>
                         <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat"
                             type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button> -->
-                        <button class="nav-link">Events</button>
-                        <button class="nav-link">Blogs</button>
-                        <button class="nav-link">Chats</button>
+                        <button class="nav-link active" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
+                            type="button" role="tab" aria-controls="nav-event" aria-selected="false">Events</button>
+                        <button class="nav-link " id="nav-blog-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-blog" type="button" role="tab" aria-controls="nav-blog"
+                            aria-selected="false">Blogs</button>
+                        <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat"
+                            type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button>
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
@@ -44,90 +48,10 @@ include 'includes/header_dash.php';
                                 <div class="col-12">
                                     <div class="dash_slide_container">
                                         <h4><i class="fa-solid fa-heart"></i>Hot List</h4>
-                                        <!-- <div class="item_dash_slides">
-                                            <div class="ids">
-                                                <a href="dashboard_my-matches.php">
-                                                    <div class="mm_d_cards">
-                                                        <div class="mdc_1">
-                                                            <img class="img-fluid" src="images/item_slide.png" alt="">
-                                                        </div>
-                                                        <div class="mdCard_content">
-                                                            <h5>Name: Olivia</h5>
-                                                            <h5>Age: 29</h5>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="ids">
-                                                <a href="dashboard_my-matches.php">
-                                                    <div class="mm_d_cards">
-                                                        <div class="mdc_1">
-                                                            <img class="img-fluid" src="images/item_slide2.png" alt="">
-                                                        </div>
-                                                        <div class="mdCard_content">
-                                                            <h5>Name: Olivia</h5>
-                                                            <h5>Age: 29</h5>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="ids">
-                                                <a href="dashboard_my-matches.php">
-                                                    <div class="mm_d_cards">
-                                                        <div class="mdc_1">
-                                                            <img class="img-fluid" src="images/item_slide.png" alt="">
-                                                        </div>
-                                                        <div class="mdCard_content">
-                                                            <h5>Name: Olivia</h5>
-                                                            <h5>Age: 29</h5>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="ids">
-                                                <a href="dashboard_my-matches.php">
-                                                    <div class="mm_d_cards">
-                                                        <div class="mdc_1">
-                                                            <img class="img-fluid" src="images/item_slide3.png" alt="">
-                                                        </div>
-                                                        <div class="mdCard_content">
-                                                            <h5>Name: Olivia</h5>
-                                                            <h5>Age: 29</h5>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="ids">
-                                                <a href="dashboard_my-matches.php">
-                                                    <div class="mm_d_cards">
-                                                        <div class="mdc_1">
-                                                            <img class="img-fluid" src="images/item_slide.png" alt="">
-                                                        </div>
-                                                        <div class="mdCard_content">
-                                                            <h5>Name: Olivia</h5>
-                                                            <h5>Age: 29</h5>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="ids">
-                                                <a href="dashboard_my-matches.php">
-                                                    <div class="mm_d_cards">
-                                                        <div class="mdc_1">
-                                                            <img class="img-fluid" src="images/item_slide.png" alt="">
-                                                        </div>
-                                                        <div class="mdCard_content">
-                                                            <h5>Name: Olivia</h5>
-                                                            <h5>Age: 29</h5>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div> -->
                                         <div class="item_dash_slides">
                                             <div class="owl-carousel owl-theme">
                                                 <div class="ids">
-                                                    <a href="#;">
+                                                    <a href="dashboard_my-matches.php">
                                                         <div class="mm_d_cards">
                                                             <div class="mdc_1">
                                                                 <img class="img-fluid" src="images/item_slide.png"
@@ -141,7 +65,7 @@ include 'includes/header_dash.php';
                                                     </a>
                                                 </div>
                                                 <div class="ids">
-                                                    <a href="#;">
+                                                    <a href="dashboard_my-matches.php">
                                                         <div class="mm_d_cards">
                                                             <div class="mdc_1">
                                                                 <img class="img-fluid" src="images/item_slide2.png"
@@ -155,7 +79,7 @@ include 'includes/header_dash.php';
                                                     </a>
                                                 </div>
                                                 <div class="ids">
-                                                    <a href="#;">
+                                                    <a href="dashboard_my-matches.php">
                                                         <div class="mm_d_cards">
                                                             <div class="mdc_1">
                                                                 <img class="img-fluid" src="images/item_slide.png"
@@ -169,7 +93,7 @@ include 'includes/header_dash.php';
                                                     </a>
                                                 </div>
                                                 <div class="ids">
-                                                    <a href="#;">
+                                                    <a href="dashboard_my-matches.php">
                                                         <div class="mm_d_cards">
                                                             <div class="mdc_1">
                                                                 <img class="img-fluid" src="images/item_slide3.png"
@@ -183,7 +107,7 @@ include 'includes/header_dash.php';
                                                     </a>
                                                 </div>
                                                 <div class="ids">
-                                                    <a href="#;">
+                                                    <a href="dashboard_my-matches.php">
                                                         <div class="mm_d_cards">
                                                             <div class="mdc_1">
                                                                 <img class="img-fluid" src="images/item_slide.png"
@@ -197,7 +121,7 @@ include 'includes/header_dash.php';
                                                     </a>
                                                 </div>
                                                 <div class="ids">
-                                                    <a href="#;">
+                                                    <a href="dashboard_my-matches.php">
                                                         <div class="mm_d_cards">
                                                             <div class="mdc_1">
                                                                 <img class="img-fluid" src="images/item_slide.png"
@@ -211,7 +135,7 @@ include 'includes/header_dash.php';
                                                     </a>
                                                 </div>
                                                 <div class="ids">
-                                                    <a href="#;">
+                                                    <a href="dashboard_my-matches.php">
                                                         <div class="mm_d_cards">
                                                             <div class="mdc_1">
                                                                 <img class="img-fluid" src="images/item_slide.png"
@@ -390,7 +314,7 @@ include 'includes/header_dash.php';
                                                     profile details</a></li>
                                             <li><a href="dashboard_search.php"><i class="fa-solid fa-circle"></i>Change
                                                     matchmaking settings</a></li>
-                                            <li><a href="dashboard_search.php"><i class="fa-solid fa-circle"></i>Look
+                                            <li><a href="#;"><i class="fa-solid fa-circle"></i>Look
                                                     who’s in</a></li>
                                         </ul>
                                         <h5>Feel free to participate in our community!</h5>
@@ -713,7 +637,7 @@ include 'includes/header_dash.php';
                                                 <div class="subc3">
                                                     <a href="dashboard_sub_pkgs.php" class="btn4">Upgrade your <br>
                                                         plan</a>
-                                                    <a href="dashboard_sub_pkgs.php" class="btn5">Cancle</a>
+                                                    <a href="javascript:;" class="btn5">Cancle</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1135,8 +1059,13 @@ include 'includes/header_dash.php';
                                     </tbody>
                                 </table>
                                 <div class="d-flex justify-content-end align-items-center">
-                                    <button class="btn btn-theme2 d-flex align-items-center gap-2">Search<i
-                                            class="fa-solid fa-arrow-right"></i></button>
+                                <div class="ds_btn d-flex justify-content-end align-items-center">
+                                    <a href="dashboard_matches.php" class="button-container-2">
+                                        <span class="mas">Search<i class="fa-solid fa-arrow-right-long"></i></span>
+                                        <button type="button" name="Hover">Search<i
+                                                class="fa-solid fa-arrow-right-long"></i></button>
+                                    </a>
+                                </div>
                                 </div>
                             </div>
                         </form>
@@ -1151,7 +1080,7 @@ include 'includes/header_dash.php';
                                         <input type="search" placeholder="Search Groups">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                     </div>
-                                    <a class="btn6" href="javascript:;">
+                                    <a class="btn6" href="dashboard_create_group.php">
                                         <img src="images/team.png" alt="">
                                         Create Group</a>
                                 </div>
@@ -1166,7 +1095,7 @@ include 'includes/header_dash.php';
                                 </div>
                                 <div class="row g-0">
                                     <div class="col-3">
-                                        <div class="sg_card ps-0">
+                                        <div class="sg_card">
                                             <img src="images/sg_img1.svg" class="img-fluid" alt="">
                                             <div class="sg_card_body">
                                                 <div class="scb3">
@@ -1176,7 +1105,10 @@ include 'includes/header_dash.php';
                                                         <h5><span>• 2,351 Members</span></h5>
                                                     </div>
                                                 </div>
-                                                <a href="#;" class="btn6">Join Group</a>
+                                                <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                    <span class="mas">Join Group</span>
+                                                    <button type="button" name="Hover">Join Group</button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1191,7 +1123,10 @@ include 'includes/header_dash.php';
                                                         <h5><span>• 1,23M Members</span></h5>
                                                     </div>
                                                 </div>
-                                                <a href="#;" class="btn6">Join Group</a>
+                                                <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                    <span class="mas">Join Group</span>
+                                                    <button type="button" name="Hover">Join Group</button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1206,12 +1141,15 @@ include 'includes/header_dash.php';
                                                         <h5><span>• 2,351 Members</span></h5>
                                                     </div>
                                                 </div>
-                                                <a href="#;" class="btn6">Join Group</a>
+                                                <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                    <span class="mas">Join Group</span>
+                                                    <button type="button" name="Hover">Join Group</button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-3">
-                                        <div class="sg_card pe-0">
+                                        <div class="sg_card">
                                             <img src="images/sg_img3.svg" class="img-fluid" alt="">
                                             <div class="sg_card_body">
                                                 <div class="scb3">
@@ -1221,12 +1159,14 @@ include 'includes/header_dash.php';
                                                         <h5><span>• 124,213 Members</span></h5>
                                                     </div>
                                                 </div>
-                                                <a href="#;" class="btn6">Join Group</a>
+                                                <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                    <span class="mas">Join Group</span>
+                                                    <button type="button" name="Hover">Join Group</button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="suggestion_group mt-5">
                                 <div class="sg_head">
@@ -1238,7 +1178,7 @@ include 'includes/header_dash.php';
                                 </div>
                                 <div class="row g-0">
                                     <div class="col-3">
-                                        <div class="sg_card ps-0">
+                                        <div class="sg_card">
                                             <img src="images/sg_img1.svg" class="img-fluid" alt="">
                                             <div class="sg_card_body">
                                                 <div class="scb3">
@@ -1249,8 +1189,14 @@ include 'includes/header_dash.php';
                                                     </div>
                                                 </div>
                                                 <div class="d-flex gap-2 scb_btn">
-                                                    <a href="#;" class="btn6">View Details</a>
-                                                    <a href="#;" class="btn6">Start Chat</a>
+                                                    <a href="javascript:;" class="button-container-2 d-flex">
+                                                        <span class="mas">View Details</span>
+                                                        <button type="button" name="Hover">View Details</button>
+                                                    </a>
+                                                    <a href="javascript:;" class="button-container-2 d-flex">
+                                                        <span class="mas">Start Chat</span>
+                                                        <button type="button" name="Hover">Start Chat</button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1267,8 +1213,14 @@ include 'includes/header_dash.php';
                                                     </div>
                                                 </div>
                                                 <div class="d-flex gap-2 scb_btn">
-                                                    <a href="#;" class="btn6">View Details</a>
-                                                    <a href="#;" class="btn6">Start Chat</a>
+                                                    <a href="javascript:;" class="button-container-2 d-flex">
+                                                        <span class="mas">View Details</span>
+                                                        <button type="button" name="Hover">View Details</button>
+                                                    </a>
+                                                    <a href="javascript:;" class="button-container-2 d-flex">
+                                                        <span class="mas">Start Chat</span>
+                                                        <button type="button" name="Hover">Start Chat</button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1285,14 +1237,20 @@ include 'includes/header_dash.php';
                                                     </div>
                                                 </div>
                                                 <div class="d-flex gap-2 scb_btn">
-                                                    <a href="#;" class="btn6">View Details</a>
-                                                    <a href="#;" class="btn6">Start Chat</a>
+                                                    <a href="javascript:;" class="button-container-2 d-flex">
+                                                        <span class="mas">View Details</span>
+                                                        <button type="button" name="Hover">View Details</button>
+                                                    </a>
+                                                    <a href="javascript:;" class="button-container-2 d-flex">
+                                                        <span class="mas">Start Chat</span>
+                                                        <button type="button" name="Hover">Start Chat</button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-3">
-                                        <div class="sg_card pe-0">
+                                        <div class="sg_card">
                                             <img src="images/sg_img3.svg" class="img-fluid" alt="">
                                             <div class="sg_card_body">
                                                 <div class="scb3">
@@ -1303,8 +1261,14 @@ include 'includes/header_dash.php';
                                                     </div>
                                                 </div>
                                                 <div class="d-flex gap-2 scb_btn">
-                                                    <a href="#;" class="btn6">View Details</a>
-                                                    <a href="#;" class="btn6">Start Chat</a>
+                                                    <a href="javascript:;" class="button-container-2 d-flex">
+                                                        <span class="mas">View Details</span>
+                                                        <button type="button" name="Hover">View Details</button>
+                                                    </a>
+                                                    <a href="javascript:;" class="button-container-2 d-flex">
+                                                        <span class="mas">Start Chat</span>
+                                                        <button type="button" name="Hover">Start Chat</button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1491,10 +1455,12 @@ include 'includes/header_dash.php';
                         <div class="chat_dashboard">
                             <div class="row">
                                 <div class="col-3">
-                                    <div class="chat_left">
+                                    <div class="chat_left" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                         <h2>Chat</h2>
                                         <div class="cl_item">
-                                            <div class="cl_item_inner">
+                                            <div class="cl_item_inner active" id="v-pills-profile-tab"
+                                                data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button"
+                                                role="tab" aria-controls="v-pills-profile" aria-selected="true">
                                                 <div class="mm_d_cards">
                                                     <img class="img-fluid" src="images/chat-list1.png" alt="">
                                                     <div class="mdCard_content">
@@ -1505,7 +1471,9 @@ include 'includes/header_dash.php';
                                                     <p><span>32 y.o</span></p>
                                                 </div>
                                             </div>
-                                            <div class="cl_item_inner">
+                                            <div class="cl_item_inner" id="v-pills-profile1-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-profile1" type="button" role="tab"
+                                                aria-controls="v-pills-profile1" aria-selected="false">
                                                 <div class="mm_d_cards">
                                                     <img class="img-fluid" src="images/chat-list1.png" alt="">
                                                     <div class="mdCard_content">
@@ -1516,7 +1484,9 @@ include 'includes/header_dash.php';
                                                     <p><span>32 y.o</span></p>
                                                 </div>
                                             </div>
-                                            <div class="cl_item_inner">
+                                            <div class="cl_item_inner" id="v-pills-profile2-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-profile2" type="button" role="tab"
+                                                aria-controls="v-pills-profile2" aria-selected="false">
                                                 <div class="mm_d_cards">
                                                     <img class="img-fluid" src="images/chat-list1.png" alt="">
                                                     <div class="mdCard_content">
@@ -1527,7 +1497,38 @@ include 'includes/header_dash.php';
                                                     <p><span>32 y.o</span></p>
                                                 </div>
                                             </div>
-                                            <div class="cl_item_inner">
+                                        </div>
+                                        <h2>Groups</h2>
+                                        <div class="cl_item">
+                                            <div class="cl_item_inner" id="v-pills-profile3-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-profile3" type="button" role="tab"
+                                                aria-controls="v-pills-profile3" aria-selected="false">
+                                                <div class="mm_d_cards">
+                                                    <img class="img-fluid" src="images/chat-list1.png" alt="">
+                                                    <div class="mdCard_content">
+                                                    </div>
+                                                </div>
+                                                <div class="cli_content">
+                                                    <p>Jane Doe</p>
+                                                    <p><span>32 y.o</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="cl_item_inner" id="v-pills-profile4-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-profile4" type="button" role="tab"
+                                                aria-controls="v-pills-profile4" aria-selected="false">
+                                                <div class="mm_d_cards">
+                                                    <img class="img-fluid" src="images/chat-list1.png" alt="">
+                                                    <div class="mdCard_content">
+                                                    </div>
+                                                </div>
+                                                <div class="cli_content">
+                                                    <p>Jane Doe</p>
+                                                    <p><span>32 y.o</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="cl_item_inner" id="v-pills-profile5-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-profile5" type="button" role="tab"
+                                                aria-controls="v-pills-profile5" aria-selected="false">
                                                 <div class="mm_d_cards">
                                                     <img class="img-fluid" src="images/chat-list1.png" alt="">
                                                     <div class="mdCard_content">
@@ -1541,7 +1542,7 @@ include 'includes/header_dash.php';
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-9 ps-0">
+                                <div class="col-lg-9 ps-4">
                                     <div class="chat-right" id="v-pills-tabContent">
 
                                         <div class="chat-right-scroll fade show active" id="v-pills-profile"
@@ -1551,11 +1552,351 @@ include 'includes/header_dash.php';
                                                     <img src="images/pic2.svg" alt="">
                                                     <h3>Mario Dunkin</h3>
                                                 </div>
-                                                <div class="cr_1_n">
+                                                <!-- <div class="cr_1_n">
                                                     <h4><span>Project Manager</span></h4>
                                                     <h2>-</h2>
                                                     <h4><span>New York, NY - United States</span></h4>
+                                                </div> -->
+                                            </div>
+                                            <div class="cr-2-desc">
+                                                <div class="cr-2">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis
+                                                        elementum nibh tellus molestie nunc. Libero nunc consequat
+                                                        interdum varius sit
+                                                        amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.</p>
                                                 </div>
+                                                <div class="cr-2 flex-row-reverse text-end">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis elementum nibh tellus molestie nunc. Libero nunc
+                                                        consequat interdum
+                                                        varius
+                                                        sit amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.
+                                                    </p>
+                                                </div>
+                                                <div class="cr-2">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis
+                                                        elementum nibh tellus molestie nunc. Libero nunc consequat
+                                                        interdum varius sit
+                                                        amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.</p>
+                                                </div>
+                                                <div class="cr-2 flex-row-reverse text-end">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis elementum nibh tellus molestie nunc. Libero nunc
+                                                        consequat interdum
+                                                        varius
+                                                        sit amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.
+                                                    </p>
+                                                </div>
+                                                <div class="cr-2">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis
+                                                        elementum nibh tellus molestie nunc. Libero nunc consequat
+                                                        interdum varius sit
+                                                        amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.</p>
+                                                </div>
+                                                <div class="cr-2 flex-row-reverse text-end">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis elementum nibh tellus molestie nunc. Libero nunc
+                                                        consequat interdum
+                                                        varius
+                                                        sit amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.
+                                                    </p>
+                                                </div>
+                                                <div class="cr-2">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis
+                                                        elementum nibh tellus molestie nunc. Libero nunc consequat
+                                                        interdum varius sit
+                                                        amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="chat-right-scroll fade" id="v-pills-profile1" role="tabpanel"
+                                            aria-labelledby="v-pills-profile1-tab">
+                                            <div class="cr-1 d-flex align-items-center">
+                                                <div class="d-flex gap-3 align-items-center">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <h3>Jan Doe</h3>
+                                                </div>
+                                                <!-- <div class="cr_1_n">
+                                                    <h4><span>Project Manager</span></h4>
+                                                    <h2>-</h2>
+                                                    <h4><span>New York, NY - United States</span></h4>
+                                                </div> -->
+                                            </div>
+                                            <div class="cr-2-desc">
+                                                <div class="cr-2">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis
+                                                        elementum nibh tellus molestie nunc. Libero nunc consequat
+                                                        interdum varius sit
+                                                        amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.</p>
+                                                </div>
+                                                <div class="cr-2 flex-row-reverse text-end">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis elementum nibh tellus molestie nunc. Libero nunc
+                                                        consequat interdum
+                                                        varius
+                                                        sit amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.
+                                                    </p>
+                                                </div>
+                                                <div class="cr-2">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis
+                                                        elementum nibh tellus molestie nunc. Libero nunc consequat
+                                                        interdum varius sit
+                                                        amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.</p>
+                                                </div>
+                                                <div class="cr-2 flex-row-reverse text-end">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis elementum nibh tellus molestie nunc. Libero nunc
+                                                        consequat interdum
+                                                        varius
+                                                        sit amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.
+                                                    </p>
+                                                </div>
+                                                <div class="cr-2">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis
+                                                        elementum nibh tellus molestie nunc. Libero nunc consequat
+                                                        interdum varius sit
+                                                        amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.</p>
+                                                </div>
+                                                <div class="cr-2 flex-row-reverse text-end">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis elementum nibh tellus molestie nunc. Libero nunc
+                                                        consequat interdum
+                                                        varius
+                                                        sit amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.
+                                                    </p>
+                                                </div>
+                                                <div class="cr-2">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis
+                                                        elementum nibh tellus molestie nunc. Libero nunc consequat
+                                                        interdum varius sit
+                                                        amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="chat-right-scroll fade" id="v-pills-profile2" role="tabpanel"
+                                            aria-labelledby="v-pills-profile2-tab">
+                                            <div class="cr-1 d-flex align-items-center">
+                                                <div class="d-flex gap-3 align-items-center">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <h3>Jan D</h3>
+                                                </div>
+                                                <!-- <div class="cr_1_n">
+                                                    <h4><span>Project Manager</span></h4>
+                                                    <h2>-</h2>
+                                                    <h4><span>New York, NY - United States</span></h4>
+                                                </div> -->
+                                            </div>
+                                            <div class="cr-2-desc">
+                                                <div class="cr-2">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis
+                                                        elementum nibh tellus molestie nunc. Libero nunc consequat
+                                                        interdum varius sit
+                                                        amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.</p>
+                                                </div>
+                                                <div class="cr-2 flex-row-reverse text-end">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis elementum nibh tellus molestie nunc. Libero nunc
+                                                        consequat interdum
+                                                        varius
+                                                        sit amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.
+                                                    </p>
+                                                </div>
+                                                <div class="cr-2">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis
+                                                        elementum nibh tellus molestie nunc. Libero nunc consequat
+                                                        interdum varius sit
+                                                        amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.</p>
+                                                </div>
+                                                <div class="cr-2 flex-row-reverse text-end">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis elementum nibh tellus molestie nunc. Libero nunc
+                                                        consequat interdum
+                                                        varius
+                                                        sit amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.
+                                                    </p>
+                                                </div>
+                                                <div class="cr-2">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis
+                                                        elementum nibh tellus molestie nunc. Libero nunc consequat
+                                                        interdum varius sit
+                                                        amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.</p>
+                                                </div>
+                                                <div class="cr-2 flex-row-reverse text-end">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis elementum nibh tellus molestie nunc. Libero nunc
+                                                        consequat interdum
+                                                        varius
+                                                        sit amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.
+                                                    </p>
+                                                </div>
+                                                <div class="cr-2">
+                                                    <img src="images/pic2.svg" alt="">
+                                                    <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                        ultrices eros in.
+                                                        Lobortis
+                                                        elementum nibh tellus molestie nunc. Libero nunc consequat
+                                                        interdum varius sit
+                                                        amet
+                                                        mattis vulputate. Duis at consectetur lorem donec massa. Eget
+                                                        nulla facilisi
+                                                        etiam
+                                                        dignissim diam quis enim lobortis condimentum lacinia quis.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="chat-right-scroll fade" id="v-pills-profile3" role="tabpanel"
+                                            aria-labelledby="v-pills-profile3-tab">
+                                            <div class="cr-1 d-flex align-items-center justify-content-between">
+                                                <div class="d-flex gap-3 align-items-center">
+                                                    <!-- <img src="images/pic2.svg" alt=""> -->
+                                                    <h3>Group 1</h3>
+                                                    <h3><span>28 Members</span></h3>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                   <img class="img-fluid" src="images/pic2.svg" alt="">
+                                                   <img class="img-fluid" src="images/pic2.svg" alt="">
+                                                   <img class="img-fluid" src="images/pic2.svg" alt="">
+                                                   <h3><span>More</span></h3>
+                                                </div>
+                                                <!-- <div class="cr_1_n">
+                                                    <h4><span>Project Manager</span></h4>
+                                                    <h2>-</h2>
+                                                    <h4><span>New York, NY - United States</span></h4>
+                                                </div> -->
                                             </div>
                                             <div class="cr-2-desc">
                                                 <div class="cr-2">
