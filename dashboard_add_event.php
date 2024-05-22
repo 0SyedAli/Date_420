@@ -29,18 +29,18 @@ include 'includes/header_dash.php';
                         type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blogs</button>
                         <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat"
                         type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button> -->
-                        <button class="nav-link active" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
-                            type="button" role="tab" aria-controls="nav-event" aria-selected="false">Events</button>
-                        <button class="nav-link " id="nav-blog-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-blog" type="button" role="tab" aria-controls="nav-blog"
-                            aria-selected="false">Blogs</button>
+                        <button class="nav-link active" id="nav-event-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-event" type="button" role="tab" aria-controls="nav-event"
+                            aria-selected="false">Events</button>
+                        <button class="nav-link " id="nav-blog-tab" data-bs-toggle="tab" data-bs-target="#nav-blog"
+                            type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blogs</button>
                         <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat"
                             type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button>
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade   " id="nav-dashboard" role="tabpanel"
-                        aria-labelledby="nav-dashboard-tab" tabindex="0">
+                    <div class="tab-pane fade   " id="nav-dashboard" role="tabpanel" aria-labelledby="nav-dashboard-tab"
+                        tabindex="0">
                         <div class="item_dashboard">
                             <h2>My Dashboard</h2>
                             <div class="row mb-5">
@@ -1761,77 +1761,98 @@ include 'includes/header_dash.php';
                             </div> -->
                         </div>
                     </div>
-                    <div class="tab-pane fade show active" id="nav-event" role="tabpanel" aria-labelledby="nav-event-tab"
-                        tabindex="0">
-                        <div class="event_dashboard">
-                            <h2>Events</h2>
-                            <div class="ed_items">
-                                <div class="row">
-                                    <div class="col-5">
-                                        <a href="dashboard_events.php">
-                                            <div class="bpr_inner d-flex align-items-center">
-                                                <img class="img-fluid" src="images/bpr1.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
+                    <div class="tab-pane fade show active" id="nav-event" role="tabpanel"
+                        aria-labelledby="nav-event-tab" tabindex="0">
+                        <div class="event_dashboard ">
+                            <h2>Add Event</h2>
+                            <div class="add_event">
+                                <form action="javascript:;">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="ae_left">
+                                                <div class="row">
+                                                    <div class="ae_fields col-12">
+                                                        <input type="text" class="form-control" placeholder="Title">
+                                                    </div>
+                                                    <div class="ae_fields position-relative col-7">
+                                                        <div class="ae_select">
+                                                            <select>
+                                                                <option value="0">Date</option>
+                                                                <option value="1">Option One</option>
+                                                                <option value="2">Option Two</option>
+                                                                <option value="3">Option Three</option>
+                                                                <option value="4">Option Four</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ae_fields position-relative col-5">
+                                                        <div class="ae_select">
+                                                            <select>
+                                                                <option value="0">Time</option>
+                                                                <option value="1">Option One</option>
+                                                                <option value="2">Option Two</option>
+                                                                <option value="3">Option Three</option>
+                                                                <option value="4">Option Four</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ae_fields col-12">
+                                                        <input type="text" class="form-control" disabled placeholder="About">
+                                                    </div>
+                                                    <div class="ae_fields textarea_field col-12">
+                                                        <textarea name="" rows="6"
+                                                            placeholder="Describe the meeting..."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="ae_more_info">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="ae_radio">
+                                                                <img src="images/custom_check.png" alt="">
+                                                                <p>More Information</p>
+                                                            </div>
+                                                            <div class="ae_g_ticket">
+                                                                <h4>Get your tickets From </h4>
+                                                            </div>
+                                                            <div class="ae_g_url">
+                                                                <div class="ae_g_field">
+                                                                    <label for="">URL</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                                <div class="ae_g_field">
+                                                                    <label for="">Phone</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-2"></div>
-                                    <div class="col-5">
-                                        <a href="dashboard_events.php">
-                                            <div class="bpr_inner d-flex align-items-center">
-                                                <img class="img-fluid" src="images/bpr2.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="ae_right">
+                                                <div class="ae_upload_image">
+                                                    <div class="aui_inner">
+                                                        <img src="images/ae_image.png" alt="">
+                                                        <p>Upload Image</p>
+                                                    </div>
+                                                    <div>
+                                                        <input type="file" id="imageUpload" style="display: none;"
+                                                            accept="image/*">
+                                                    </div>
+                                                    <div class="ae_uploaded_image" id="ae_uploaded">
+                                                        <img src="" alt="" id="uploadedImage" style="display: none;">
+                                                    </div>
+                                                </div>
+                                                <div class="text-center">
+                                                    <a class="btn6" href="dashboard_create_group.php">
+                                                        <img src="images/calender_star.png" alt="">
+                                                        Add New Event</a>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-5">
-                                        <a href="dashboard_events.php">
-                                            <div class="bpr_inner d-flex align-items-center">
-                                                <img class="img-fluid" src="images/bpr3.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-2"></div>
-                                    <div class="col-5">
-                                        <a href="dashboard_events.php">
-                                            <div class="bpr_inner d-flex align-items-center">
-                                                <img class="img-fluid" src="images/bpr4.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                         <!-- <div class="event_dash_sp event_dashboard">
@@ -1867,7 +1888,7 @@ include 'includes/header_dash.php';
                                     </div>
                                     <div class="col-5">
                                         <div class="blog_post_right">
-                                            <div class="bpr_inner d-flex align-items-center py-4">
+                                            <div class="bpr_inner d-flex align-items-center">
                                                 <img class="img-fluid" src="images/bpr1.png" alt="">
                                                 <div class="bpr_desc">
                                                     <h5>Here is the history of how 420 got associated with smoking
@@ -1878,7 +1899,7 @@ include 'includes/header_dash.php';
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="bpr_inner d-flex align-items-center py-4">
+                                            <div class="bpr_inner d-flex align-items-center">
                                                 <img class="img-fluid" src="images/bpr2.png" alt="">
                                                 <div class="bpr_desc">
                                                     <h5>Here is the history of how 420 got associated with smoking
@@ -1898,44 +1919,45 @@ include 'includes/header_dash.php';
                     <div class="tab-pane fade" id="nav-blog" role="tabpanel" aria-labelledby="nav-blog-tab"
                         tabindex="0">
                         <div class="blog_dashboard">
+                            <h2>Blogs</h2>
                             <div class="row">
                                 <div class="col-7">
                                     <div class="blog_post">
-                                        <h2>Smoke and Poke will provide a cannabis enthusiast with a HIGH</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor ut dolore magna aliqua.</p>
-                                        <img src="images/blog_post1.png" alt="" class="img-fluid">
-                                        <div class="bp_detail">
-                                            <h4><i class="fa-solid fa-user"></i>By Admin</h4>
-                                            <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
-                                            </h4>
-                                            <h4>
-                                                <img class="img-fluid" src="images/comment.svg" alt="">
-                                                Leave a Comment
-                                            </h4>
-                                        </div>
+                                        <h3>Smoke and Poke will provide a cannabis enthusiast with a HIGH</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                eiusmod tempor ut dolore magna aliqua.</p>
+                                            <img src="images/blog_post1.png" alt="" class="blog_img1 img-fluid">
+                                            <div class="bp_detail">
+                                                <h4><i class="fa-solid fa-user"></i>By Admin</h4>
+                                                <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
+                                                </h4>
+                                                <h4>
+                                                    <img class="img-fluid" src="images/comment.svg" alt="">
+                                                    Leave a Comment
+                                                </h4>
+                                            </div>
                                     </div>
                                     <div class="blog_post">
-                                        <h2>Smoke and Poke will provide a cannabis enthusiast with a HIGH</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor ut dolore magna aliqua.</p>
-                                        <img src="images/blog_post2.png" alt="" class="img-fluid">
-                                        <div class="bp_detail">
-                                            <h4><i class="fa-solid fa-user"></i>By Admin</h4>
-                                            <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
-                                            </h4>
-                                            <h4>
-                                                <img class="img-fluid" src="images/comment.svg" alt="">
-                                                Leave a Comment
-                                            </h4>
-                                        </div>
+                                        <h3>Cannabis-oriented celebrations</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                eiusmod tempor ut dolore magna aliqua.</p>
+                                            <img src="images/blog_post2.png" alt="" class="blog_img1 img-fluid">
+                                            <div class="bp_detail">
+                                                <h4><i class="fa-solid fa-user"></i>By Admin</h4>
+                                                <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
+                                                </h4>
+                                                <h4>
+                                                    <img class="img-fluid" src="images/comment.svg" alt="">
+                                                    Leave a Comment
+                                                </h4>
+                                            </div>
                                     </div>
 
                                 </div>
-                                <div class="col-5">
+                                <div class="col-5 pe-0">
                                     <div class="blog_post_right">
                                         <h2>Recent Posts</h2>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr1.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
@@ -1946,7 +1968,7 @@ include 'includes/header_dash.php';
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr2.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
@@ -1957,7 +1979,7 @@ include 'includes/header_dash.php';
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr3.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
@@ -1968,7 +1990,7 @@ include 'includes/header_dash.php';
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr4.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
@@ -1979,7 +2001,29 @@ include 'includes/header_dash.php';
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
+                                            <img class="img-fluid" src="images/bpr5.png" alt="">
+                                            <div class="bpr_desc">
+                                                <h5>Here is the history of how 420 got associated with smoking
+                                                </h5>
+                                                <h6>March 13, 2024</h6>
+                                                <p>Lorem ipsum simply dummy text is for using printing or
+                                                    pricing.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="bpr_inner d-flex align-items-center">
+                                            <img class="img-fluid" src="images/bpr5.png" alt="">
+                                            <div class="bpr_desc">
+                                                <h5>Here is the history of how 420 got associated with smoking
+                                                </h5>
+                                                <h6>March 13, 2024</h6>
+                                                <p>Lorem ipsum simply dummy text is for using printing or
+                                                    pricing.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr5.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking

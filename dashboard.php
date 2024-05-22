@@ -29,11 +29,10 @@ include 'includes/header_dash.php';
                             type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blogs</button>
                         <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat"
                             type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button> -->
-                            <button class="nav-link" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
+                        <button class="nav-link" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
                             type="button" role="tab" aria-controls="nav-event" aria-selected="false">Events</button>
-                        <button class="nav-link" id="nav-blog-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-blog" type="button" role="tab" aria-controls="nav-blog"
-                            aria-selected="false">Blogs</button>
+                        <button class="nav-link" id="nav-blog-tab" data-bs-toggle="tab" data-bs-target="#nav-blog"
+                            type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blogs</button>
                         <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat"
                             type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button>
                     </div>
@@ -1888,51 +1887,56 @@ include 'includes/header_dash.php';
                                         </a>
                                     </div>
                                 </div>
+
                             </div>
+                            <a class="btn6" href="dashboard_add_event.php">
+                                <img src="images/calender_star.png" alt="">
+                                Add Event</a>
                         </div>
 
                     </div>
                     <div class="tab-pane fade" id="nav-blog" role="tabpanel" aria-labelledby="nav-blog-tab"
                         tabindex="0">
                         <div class="blog_dashboard">
+                            <h2>Blogs</h2>
                             <div class="row">
                                 <div class="col-7">
                                     <div class="blog_post">
-                                        <h2>Smoke and Poke will provide a cannabis enthusiast with a HIGH</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor ut dolore magna aliqua.</p>
-                                        <img src="images/blog_post1.png" alt="" class="img-fluid">
-                                        <div class="bp_detail">
-                                            <h4><i class="fa-solid fa-user"></i>By Admin</h4>
-                                            <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
-                                            </h4>
-                                            <h4>
-                                                <img class="img-fluid" src="images/comment.svg" alt="">
-                                                Leave a Comment
-                                            </h4>
-                                        </div>
+                                        <h3>Smoke and Poke will provide a cannabis enthusiast with a HIGH</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                eiusmod tempor ut dolore magna aliqua.</p>
+                                            <img src="images/blog_post1.png" alt="" class="blog_img1 img-fluid">
+                                            <div class="bp_detail">
+                                                <h4><i class="fa-solid fa-user"></i>By Admin</h4>
+                                                <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
+                                                </h4>
+                                                <h4>
+                                                    <img class="img-fluid" src="images/comment.svg" alt="">
+                                                    Leave a Comment
+                                                </h4>
+                                            </div>
                                     </div>
                                     <div class="blog_post">
-                                        <h2>Smoke and Poke will provide a cannabis enthusiast with a HIGH</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor ut dolore magna aliqua.</p>
-                                        <img src="images/blog_post2.png" alt="" class="img-fluid">
-                                        <div class="bp_detail">
-                                            <h4><i class="fa-solid fa-user"></i>By Admin</h4>
-                                            <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
-                                            </h4>
-                                            <h4>
-                                                <img class="img-fluid" src="images/comment.svg" alt="">
-                                                Leave a Comment
-                                            </h4>
-                                        </div>
+                                        <h3>Cannabis-oriented celebrations</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                eiusmod tempor ut dolore magna aliqua.</p>
+                                            <img src="images/blog_post2.png" alt="" class="blog_img1 img-fluid">
+                                            <div class="bp_detail">
+                                                <h4><i class="fa-solid fa-user"></i>By Admin</h4>
+                                                <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
+                                                </h4>
+                                                <h4>
+                                                    <img class="img-fluid" src="images/comment.svg" alt="">
+                                                    Leave a Comment
+                                                </h4>
+                                            </div>
                                     </div>
 
                                 </div>
-                                <div class="col-5">
+                                <div class="col-5 pe-0">
                                     <div class="blog_post_right">
                                         <h2>Recent Posts</h2>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr1.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
@@ -1943,7 +1947,7 @@ include 'includes/header_dash.php';
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr2.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
@@ -1954,7 +1958,7 @@ include 'includes/header_dash.php';
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr3.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
@@ -1965,7 +1969,7 @@ include 'includes/header_dash.php';
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr4.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
@@ -1976,7 +1980,29 @@ include 'includes/header_dash.php';
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
+                                            <img class="img-fluid" src="images/bpr5.png" alt="">
+                                            <div class="bpr_desc">
+                                                <h5>Here is the history of how 420 got associated with smoking
+                                                </h5>
+                                                <h6>March 13, 2024</h6>
+                                                <p>Lorem ipsum simply dummy text is for using printing or
+                                                    pricing.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="bpr_inner d-flex align-items-center">
+                                            <img class="img-fluid" src="images/bpr5.png" alt="">
+                                            <div class="bpr_desc">
+                                                <h5>Here is the history of how 420 got associated with smoking
+                                                </h5>
+                                                <h6>March 13, 2024</h6>
+                                                <p>Lorem ipsum simply dummy text is for using printing or
+                                                    pricing.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr5.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking

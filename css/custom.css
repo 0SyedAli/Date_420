@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Orelega+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
@@ -1803,7 +1804,7 @@ nav.ds_tabs .nav-tabs .nav-link.active {
 }
 
 .blog_post {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .blog_post p {
@@ -1841,10 +1842,11 @@ nav.ds_tabs .nav-tabs .nav-link.active {
   padding-top: 70px;
 } */
 .blog_post_right {
-  height: 1360px;
+  height: 1225px;
   overflow-y: scroll;
   overflow-x: hidden;
-  padding-right: 30px;
+  padding-right: 20px;
+  padding-left: 10px;
 }
 
 .blog_post_right::-webkit-scrollbar-track {
@@ -1869,8 +1871,23 @@ nav.ds_tabs .nav-tabs .nav-link.active {
   margin-bottom: 50px;
 }
 
+.blog_dashboard h3 {
+  font-size: 35px;
+  color: #54ff65;
+  letter-spacing: 2px;
+  line-height: 38px;
+}
 
+.blog_dashboard .blog_img1 {
+  height: 380px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
+.blog_dashboard .bpr_desc {
+  padding-right: 0;
+}
 
 .bpr_desc {
   padding: 0 25px 0 17px;
@@ -1896,7 +1913,128 @@ nav.ds_tabs .nav-tabs .nav-link.active {
 
 .bpr_inner {
   border-bottom: 1px solid #eeeeee;
+  padding: 30px 0;
 }
+
+/* blog detail page start */
+.blog_post_about {
+  padding-top: 17px;
+}
+
+.blog_post_about h3 {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 35px;
+  font-weight: 400;
+  letter-spacing: .5s;
+}
+
+.blog_post_about h6 {
+  font-size: 11px;
+  color: #54ff65;
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 400;
+  padding: 12px 0;
+}
+
+.blog_post_about p {
+  font-size: 13px;
+  line-height: 21px;
+  padding: 0 0 20px;
+}
+
+.blog_detail_page .blog_post {
+  padding-right: 40px;
+}
+
+.blog_detail_page .blog_post {
+  height: 1160px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 30px;
+  padding-left: 10px;
+}
+
+.blog_detail_page .blog_post_right {
+  padding-left: 50px;
+  height: 800px;
+}
+
+
+
+.blog_detail_page .blog_post::-webkit-scrollbar-track {
+  background-color: rgba(35, 35, 35, 1);
+}
+
+.blog_detail_page .blog_post::-webkit-scrollbar {
+  width: 13px;
+}
+
+.blog_detail_page .blog_post::-webkit-scrollbar-thumb {
+  border-radius: 0;
+}
+
+.blog_detail_page .blog_post_right img {
+  width: 90px;
+}
+
+.blog_detail_page .bpr_inner {
+  border-bottom: none;
+  position: relative;
+}
+
+.blog_detail_page .bpr_inner:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  height: 1.5px;
+  background-color: #ccc;
+}
+
+.blog_detail_page .bpr_desc {
+  padding: 0 25px 0 38px;
+}
+
+.blog_post_right2 textarea {
+  border: 2px solid #54ff65;
+  border-radius: 8px;
+  padding: 20px 15px;
+  color: #ccc;
+}
+
+.blog_post_right2 textarea::placeholder {
+  color: #54ff65;
+}
+
+.blog_detail_page .blog_post_right2 {
+  padding: 40px 0 0 50px;
+}
+
+.blog_detail_page .blog_post_right2 textarea {
+  width: 100%;
+  background-color: transparent;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.blog_detail_page .blog_post_right2 .btn6 {
+  font-size: 18px;
+}
+
+.blog_detail_page .blog_post_right2 .btn6 img {
+  width: 40px;
+}
+
+/* blog detail page end */
+
+
+
+
+
+
 
 .s_table {
   border: 1px solid #eeeeee;
@@ -2188,10 +2326,10 @@ nav.ds_tabs .nav-tabs .nav-link.active {
   z-index: -1;
 } */
 
-.group_dashboard,
+/* .group_dashboard,
 .event_dashboard {
   min-height: 700px;
-}
+} */
 
 .group_dashboard>h2,
 .event_dashboard>h2,
@@ -2734,8 +2872,22 @@ nav.ds_tabs .nav-tabs .nav-link.active {
   padding: 30px 0;
 }
 
+.event_dashboard .ed_items .bpr_desc {
+  padding-right: 0;
+}
+
+.event_dashboard .btn6 {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 18px;
+  padding: 10px 35px 10px 15px;
+}
+
+.event_dashboard .btn6 img {
+  width: 35px;
+}
+
 .event_dashboard .ed_items {
-  margin: 40px 0 0;
+  margin: 40px 0;
   padding-right: 65px;
   height: 610px;
   overflow-y: scroll;
@@ -2803,6 +2955,255 @@ nav.ds_tabs .nav-tabs .nav-link.active {
 .event_dash_sp .blog_post_right {
   padding: 0;
 }
+
+/* add event css start */
+
+.ae_left {
+  padding: 0 40px 40px 0;
+}
+
+.ae_fields {
+  padding-top: 20px;
+
+}
+
+.ae_left input {
+  padding: 15px 10px 6px;
+}
+
+.form-control:disabled {
+  background-color: transparent;
+  opacity: 1;
+}
+
+.ae_left select {
+  padding: 15px 10px;
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #54ff65;
+  font-family: "Montserrat";
+  appearance: none;
+  position: relative;
+}
+
+.ae_left select option {
+  color: #000;
+  font-size: 17px;
+}
+
+.ae_select::after {
+  content: "\f078";
+  position: absolute;
+  bottom: 13px;
+  right: 20px;
+  font-size: 17px;
+  color: #cccc;
+  font-weight: 600;
+  font-family: 'Font Awesome 5 Pro';
+}
+
+.ae_left select::-ms-expand {
+  display: none;
+}
+
+.ae_left input,
+.ae_left select,
+.ae_left textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #6e6e6e;
+  border-radius: unset;
+  color: #54ff65;
+  width: 100%;
+}
+
+.ae_left input:focus {
+  background-color: transparent;
+  color: #54ff65;
+}
+
+
+.ae_left input::placeholder {
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #54ff65;
+  font-family: "Montserrat";
+}
+
+.ae_left label {
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #54ff65;
+  font-family: "Montserrat";
+  padding-left: 10px;
+}
+
+.ae_left input:focus::placeholder {
+  color: #54ff65;
+}
+
+
+.textarea_field {
+  padding-top: 7px;
+}
+
+.textarea_field textarea {
+  padding-left: 10px;
+  resize: none;
+  color: #ccc;
+}
+
+.textarea_field textarea::placeholder {
+  color: #FFF;
+  font-size: 14.5px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+
+}
+
+.ae_radio {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.ae_radio p {
+  font-size: 21px;
+  color: #FFF;
+  font-family: "Montserrat";
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.ae_radio img {
+  width: 40px;
+}
+
+.ae_more_info {
+  padding-top: 70px;
+}
+
+.ae_g_ticket h4 {
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #54ff65;
+  font-family: "Montserrat";
+  border-bottom: 1px solid #6e6e6e;
+  padding-bottom: 8px;
+}
+
+.ae_g_url {
+  padding: 0 0 0 40px;
+}
+
+.ae_g_field {
+  padding-top: 5px;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+}
+
+.ae_g_field input:focus {
+  color: #ccc;
+}
+
+.ae_g_field label {
+  font-size: 24px;
+  color: #FFF;
+  font-family: "Montserrat";
+  font-weight: 500;
+  letter-spacing: .5px;
+  line-height: 22px;
+}
+
+.ae_right {
+  padding-left: 50px;
+}
+
+.ae_upload_image {
+  width: 100%;
+  border: 2px solid #54ff65;
+  height: 300px;
+  position: relative;
+  margin: 67px 0;
+}
+
+.ae_upload_image .aui_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.ae_upload_image img {
+  width: 90px;
+}
+
+.ae_upload_image p {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.ae_upload_image input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 11;
+}
+
+.ae_right .btn6 {
+  justify-content: start;
+  width: 70%;
+  font-size: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  gap: 40px;
+  padding-left: 25px;
+}
+
+.ae_uploaded_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #cccccc42;
+}
+
+/* add event css end */
+
+
+/* add blog css start */
+
+.add_blog .ae_right .btn6 {
+  text-transform: capitalize;
+  font-size: 19px;
+  width: unset;
+  gap: 20px;
+  padding-left: 15px;
+}
+
+
+/* add blog css end */
+
+
+
+
+
 
 .group_dashboard h3 {
   font-size: 30px;

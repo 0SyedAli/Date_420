@@ -353,3 +353,29 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the elements
+  const uploadDiv = document.querySelector('.ae_upload_image');
+  const fileInput = document.getElementById('imageUpload');
+  const uploadedImage = document.getElementById('uploadedImage');
+
+  // When the user clicks on the upload div, trigger the file input click
+  uploadDiv.addEventListener('click', function() {
+      fileInput.click();
+  });
+
+  // When the user selects a file
+  fileInput.addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      if (file) {
+          const reader = new FileReader();
+          reader.onload = function(e) {
+              uploadedImage.src = e.target.result;
+              uploadedImage.style.display = 'block';
+          }
+          reader.readAsDataURL(file);
+      }
+  });
+});

@@ -1761,7 +1761,7 @@ include 'includes/header_dash.php';
                         <div class="event_dashboard">
                             <h2>Events</h2>
                             <div class="ed_items">
-                                <div class="row">
+                                <div class="row justify-content-between">
                                     <div class="col-5">
                                         <a href="dashboard_events.php">
                                             <div class="bpr_inner d-flex align-items-center">
@@ -1777,7 +1777,6 @@ include 'includes/header_dash.php';
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-2"></div>
                                     <div class="col-5">
                                         <a href="dashboard_events.php">
                                             <div class="bpr_inner d-flex align-items-center">
@@ -1793,8 +1792,6 @@ include 'includes/header_dash.php';
                                             </div>
                                         </a>
                                     </div>
-                                </div>
-                                <div class="row">
                                     <div class="col-5">
                                         <a href="dashboard_events.php">
                                             <div class="bpr_inner d-flex align-items-center">
@@ -1810,7 +1807,6 @@ include 'includes/header_dash.php';
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-2"></div>
                                     <div class="col-5">
                                         <a href="dashboard_events.php">
                                             <div class="bpr_inner d-flex align-items-center">
@@ -1826,54 +1822,9 @@ include 'includes/header_dash.php';
                                             </div>
                                         </a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="event_dash_sp event_dashboard">
-                            <h2>Events</h2>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-7">
-                                        <div class="edsp_left">
-                                            <div class="edsp_left_inner">
-                                                <img class="img-fluid" src="images/event_inner1.png" alt="">
-                                                <h3>Here is the history of how 420 got associated with smoking</h3>
-                                                <h5>March 13, 2024</h5>
-                                                <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
-                                                    ultrices eros in. Lobortis elementum nibh tellus molestie nunc.
-                                                    Libero nunc consequat interdum varius sit amet mattis vulputate.
-                                                    Duis at consectetur lorem donec massa. Eget nulla facilisi etiam
-                                                    dignissim diam quis enim lobortis condimentum lacinia quis.</p>
-                                                <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
-                                                    ultrices eros in. Lobortis elementum nibh tellus molestie nunc.
-                                                    Libero nunc consequat interdum varius sit amet mattis vulputate.
-                                                    Duis at consectetur lorem donec massa. Eget nulla facilisi etiam
-                                                    dignissim diam quis enim lobortis condimentum lacinia quis.Pharetra
-                                                    convallis posuere morbi leo. Vestibulum lectus mauris ultrices eros
-                                                    in. Lobortis elementum nibh tellus molestie nunc. Libero nunc
-                                                    consequat interdum varius sit amet mattis vulputate. Duis at
-                                                    consectetur lorem donec massa. Eget nulla facilisi etiam dignissim
-                                                    diam quis enim lobortis condimentum lacinia quis.</p>
-                                                <button class="btn btn-theme2 d-flex align-items-center gap-2">
-                                                    Get tickets<i class="fa-solid fa-arrow-right"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="col-5">
-                                        <div class="blog_post_right">
-                                            <div class="bpr_inner d-flex align-items-center py-4">
-                                                <img class="img-fluid" src="images/bpr1.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="bpr_inner d-flex align-items-center py-4">
+                                        <a href="dashboard_events.php">
+                                            <div class="bpr_inner d-flex align-items-center">
                                                 <img class="img-fluid" src="images/bpr2.png" alt="">
                                                 <div class="bpr_desc">
                                                     <h5>Here is the history of how 420 got associated with smoking
@@ -1884,22 +1835,73 @@ include 'includes/header_dash.php';
                                                     </p>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-5">
+                                        <a href="dashboard_events.php">
+                                            <div class="bpr_inner d-flex align-items-center">
+                                                <img class="img-fluid" src="images/bpr4.png" alt="">
+                                                <div class="bpr_desc">
+                                                    <h5>Here is the history of how 420 got associated with smoking
+                                                    </h5>
+                                                    <h6>March 13, 2024</h6>
+                                                    <p>Lorem ipsum simply dummy text is for using printing or
+                                                        pricing.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-5">
+                                        <a href="dashboard_events.php">
+                                            <div class="bpr_inner d-flex align-items-center">
+                                                <img class="img-fluid" src="images/bpr2.png" alt="">
+                                                <div class="bpr_desc">
+                                                    <h5>Here is the history of how 420 got associated with smoking
+                                                    </h5>
+                                                    <h6>March 13, 2024</h6>
+                                                    <p>Lorem ipsum simply dummy text is for using printing or
+                                                        pricing.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-5">
+                                        <a href="dashboard_events.php">
+                                            <div class="bpr_inner d-flex align-items-center">
+                                                <img class="img-fluid" src="images/bpr3.png" alt="">
+                                                <div class="bpr_desc">
+                                                    <h5>Here is the history of how 420 got associated with smoking
+                                                    </h5>
+                                                    <h6>March 13, 2024</h6>
+                                                    <p>Lorem ipsum simply dummy text is for using printing or
+                                                        pricing.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
+
                             </div>
-                        </div> -->
+                            <a class="btn6" href="dashboard_add_event.php">
+                                <img src="images/calender_star.png" alt="">
+                                Add Event</a>
+                        </div>
+
                     </div>
-                    <div class="tab-pane fade " id="nav-blog" role="tabpanel" aria-labelledby="nav-blog-tab"
+                    <div class="tab-pane fade" id="nav-blog" role="tabpanel" aria-labelledby="nav-blog-tab"
                         tabindex="0">
                         <div class="blog_dashboard">
+                        <h2>Blogs</h2>
                             <div class="row">
                                 <div class="col-7">
                                     <div class="blog_post">
-                                        <h2>Smoke and Poke will provide a cannabis enthusiast with a HIGH</h2>
+                                        <h3>Smoke and Poke will provide a cannabis enthusiast with a HIGH</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor ut dolore magna aliqua.</p>
-                                        <img src="images/blog_post1.png" alt="" class="img-fluid">
+                                        <img src="images/blog_post1.png" alt="" class="blog_img1 img-fluid">
                                         <div class="bp_detail">
                                             <h4><i class="fa-solid fa-user"></i>By Admin</h4>
                                             <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
@@ -1911,10 +1913,10 @@ include 'includes/header_dash.php';
                                         </div>
                                     </div>
                                     <div class="blog_post">
-                                        <h2>Smoke and Poke will provide a cannabis enthusiast with a HIGH</h2>
+                                        <h3>Cannabis-oriented celebrations</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor ut dolore magna aliqua.</p>
-                                        <img src="images/blog_post2.png" alt="" class="img-fluid">
+                                        <img src="images/blog_post2.png" alt="" class="blog_img1 img-fluid">
                                         <div class="bp_detail">
                                             <h4><i class="fa-solid fa-user"></i>By Admin</h4>
                                             <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
@@ -1927,10 +1929,10 @@ include 'includes/header_dash.php';
                                     </div>
 
                                 </div>
-                                <div class="col-5">
+                                <div class="col-5 pe-0">
                                     <div class="blog_post_right">
                                         <h2>Recent Posts</h2>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr1.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
@@ -1941,7 +1943,7 @@ include 'includes/header_dash.php';
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr2.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
@@ -1952,7 +1954,7 @@ include 'includes/header_dash.php';
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr3.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
@@ -1963,7 +1965,7 @@ include 'includes/header_dash.php';
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr4.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
@@ -1974,7 +1976,29 @@ include 'includes/header_dash.php';
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="bpr_inner d-flex align-items-center py-4">
+                                        <div class="bpr_inner d-flex align-items-center">
+                                            <img class="img-fluid" src="images/bpr5.png" alt="">
+                                            <div class="bpr_desc">
+                                                <h5>Here is the history of how 420 got associated with smoking
+                                                </h5>
+                                                <h6>March 13, 2024</h6>
+                                                <p>Lorem ipsum simply dummy text is for using printing or
+                                                    pricing.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="bpr_inner d-flex align-items-center">
+                                            <img class="img-fluid" src="images/bpr5.png" alt="">
+                                            <div class="bpr_desc">
+                                                <h5>Here is the history of how 420 got associated with smoking
+                                                </h5>
+                                                <h6>March 13, 2024</h6>
+                                                <p>Lorem ipsum simply dummy text is for using printing or
+                                                    pricing.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="bpr_inner d-flex align-items-center">
                                             <img class="img-fluid" src="images/bpr5.png" alt="">
                                             <div class="bpr_desc">
                                                 <h5>Here is the history of how 420 got associated with smoking
