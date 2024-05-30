@@ -33,9 +33,13 @@ $page = 'home';
                                     <p>Uncheck this box to stop receiving any mails</p>
                                 </div>
                                 <div class="genr_subm">
-                                    <button type="submit"
-                                        class="btn btn-theme2 d-flex align-items-center gap-2">Submit<i
-                                            class="fa-solid fa-arrow-right"></i></button>
+                                    <!-- <button class="btn btn-theme2 d-flex align-items-center gap-2">Submit<i
+                                    class="fa-solid fa-arrow-right"></i></button> -->
+                                    <a href="javascript:;" class="button-container-2 d-flex m-0">
+                                        <span class="mas">Submit<i class="fa-solid fa-arrow-right ps-2"></i></span>
+                                        <button type="submit" name="Hover">Submit<i
+                                                class="fa-solid fa-arrow-right ps-2"></i></button>
+                                    </a>
                                 </div>
                             </form>
                         </div>
@@ -69,11 +73,11 @@ $page = 'home';
                                                         <input type="checkbox">
                                                         <label for="">Someone Invites Me To a Group</label>
                                                     </div>
-                                                 
+
                                                 </div>
                                             </td>
                                         </tr>
-                                       
+
                                         <tr class="cc_d">
                                             <th>
                                                 <h3>Events</h3>
@@ -100,18 +104,21 @@ $page = 'home';
                                         </tr>
                                         <tr class="cc_d">
                                             <th>
-                                            <button type="submit"
-                                                    class="btn btn-theme2 d-flex align-items-center gap-2">Submit<i
-                                                        class="fa-solid fa-arrow-right"></i></button>
+                                                <a href="javascript:;" class="button-container-2 d-inline-flex m-0">
+                                                    <span class="mas">Submit<i
+                                                            class="fa-solid fa-arrow-right ps-2"></i></span>
+                                                    <button type="submit" name="Hover">Submit<i
+                                                            class="fa-solid fa-arrow-right ps-2"></i></button>
+                                                </a>
                                             </th>
-                                           
+
                                         </tr>
                                     </table>
                                 </div>
                             </form>
                         </div>
                     </div>
-                  
+
                 </div>
             </div>
         </div>
@@ -123,7 +130,7 @@ $page = 'dashboard';
 ?>
 
 <script>
-    AOS.init({
-            once: true,
-        });
+AOS.init({
+    once: true,
+});
 </script>

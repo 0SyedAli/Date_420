@@ -51,7 +51,7 @@ $page = 'home';
                                     <div class="dash_slide_container">
                                         <h4><i class="fa-solid fa-heart"></i>Hot List</h4>
                                         <div class="item_dash_slides">
-                                        <div class="owl-carousel owl-theme">
+                                        <div class="ids-carousel owl-carousel owl-theme">
                                             <div class="ids">
                                                 <a href="dashboard_my-matches.php">
                                                     <div class="mm_d_cards">
@@ -261,7 +261,12 @@ $page = 'home';
                                         </div>
                                     </div>
                                     <div class=" dash_search align-items-center gap-3 d-flex">
-                                        <a href="javascript:;" class="btn-theme2">Search</a>
+                                        <a href="javascript:;">
+                                            <div class="button-container-2 me-0">
+                                                <span class="mas">Search</span>
+                                                <button type="button" name="Hover">Search</button>
+                                            </div>
+                                        </a>
                                         <a href="javascript:;" class="ad_se">Advanced Search</a>
                                     </div>
                                 </div>
@@ -292,7 +297,12 @@ $page = 'home';
                                             </div>
                                         </div>
                                         <div class="text-center pt-2 pb-3">
-                                            <a href="dashboard_matches.php" class="btn-theme2">View All</a>
+                                            <a href="dashboard_matches.php">
+                                                <div class="button-container-2 d-inline-flex">
+                                                    <span class="mas">View All</span>
+                                                    <button type="button" name="Hover">View All</button>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <br>
@@ -309,7 +319,7 @@ $page = 'home';
                                                     profile details</a></li>
                                             <li><a href="dashboard_search.php"><i class="fa-solid fa-circle"></i>Change
                                                     matchmaking settings</a></li>
-                                            <li><a href="#;"><i class="fa-solid fa-circle"></i>Look
+                                            <li><a href="dashboard_chat.php"><i class="fa-solid fa-circle"></i>Look
                                                     who’s in</a></li>
                                         </ul>
                                         <h5>Feel free to participate in our community!</h5>
@@ -1431,84 +1441,255 @@ $page = 'home';
                     </div>
                     <div class="tab-pane fade" id="nav-group" role="tabpanel" aria-labelledby="nav-group-tab"
                         tabindex="0">
-                        <div class="group_dashboard">
-                            <h2>Groups</h2>
-                            <div class="gd_item">
-                                <h3>Group 1</h3>
-                                <div class="row row_group">
-                                    <div class="col-3">
-                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
-                                            <div class="mm_d_cards">
-                                                <img class="img-fluid" src="images/md-card1.png" alt="">
-                                                <div class="mdCard_content">
-                                                    <h5>Name: Olivia</h5>
-                                                    <h5>Age: 29</h5>
-                                                </div>
-                                            </div>
-                                        </a>
+                        <div class="group_dashboard2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h2>Groups</h2>
+                                <div class="gd_item1">
+                                    <div class="gdi_search">
+                                        <input type="search" placeholder="Search Groups">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
                                     </div>
-                                    <div class="col-3">
-                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
-                                            <div class="mm_d_cards">
-                                                <img class="img-fluid" src="images/md-card12.png" alt="">
-                                                <div class="mdCard_content">
-                                                    <h5>Name: Olivia</h5>
-                                                    <h5>Age: 29</h5>
-                                                </div>
-                                            </div>
-                                        </a>
+                                    <a href="dashboard_create_group.php" class="button-container-2 d-flex">
+                                        <span class="mas"><img src="images/team.png" alt="">
+                                            Create Group</span>
+                                        <button type="button" name="Hover"><img src="images/team.png" alt="">
+                                            Create Group</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="suggestion_group">
+                                <div class="sg_head">
+                                    <div>
+                                        <h3>Suggested Groups</h3>
+                                        <p>Groups you might be interested in.</p>
                                     </div>
-                                    <div class="col-3">
-                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
-                                            <div class="mm_d_cards">
-                                                <img class="img-fluid" src="images/md-card11.png" alt="">
-                                                <div class="mdCard_content">
-                                                    <h5>Name: Olivia</h5>
-                                                    <h5>Age: 29</h5>
+                                    <a href="dashboard_sugestion_group_see_all.php">SEE ALL</a>
+                                </div>
+                                <div class="group-carousel owl-carousel owl-theme">
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img1.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                        <h5>Texas</h5>
+                                                        <h5><span>• 2,351 Members</span></h5>
+                                                    </div>
                                                 </div>
+                                                <a href="javascript:;" class="button-container-2 d-flex">
+                                                    <span class="mas">Join Group</span>
+                                                    <button type="button" name="Hover">Join Group</button>
+                                                </a>
                                             </div>
-                                        </a>
+                                        </div>
                                     </div>
-                                    <div class="col-3">
-                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
-                                            <div class="mm_d_cards">
-                                                <img class="img-fluid" src="images/md-card10.png" alt="">
-                                                <div class="mdCard_content">
-                                                    <h5>Name: Olivia</h5>
-                                                    <h5>Age: 29</h5>
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img2.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                        <h5>California</h5>
+                                                        <h5><span>• 1,23M Members</span></h5>
+                                                    </div>
                                                 </div>
+                                                <a href="javascript:;" class="button-container-2 d-flex">
+                                                    <span class="mas">Join Group</span>
+                                                    <button type="button" name="Hover">Join Group</button>
+                                                </a>
                                             </div>
-                                        </a>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img4.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                        <h5>Alabama</h5>
+                                                        <h5><span>• 2,351 Members</span></h5>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:;" class="button-container-2 d-flex">
+                                                    <span class="mas">Join Group</span>
+                                                    <button type="button" name="Hover">Join Group</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img3.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                        <h5>New York</h5>
+                                                        <h5><span>• 124,213 Members</span></h5>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:;" class="button-container-2 d-flex">
+                                                    <span class="mas">Join Group</span>
+                                                    <button type="button" name="Hover">Join Group</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img2.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                        <h5>California</h5>
+                                                        <h5><span>• 1,23M Members</span></h5>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:;" class="button-container-2 d-flex">
+                                                    <span class="mas">Join Group</span>
+                                                    <button type="button" name="Hover">Join Group</button>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="gd_item">
-                                <h3>Group 2</h3>
-                                <div class="row row_group">
-                                    <div class="col-3">
-                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
-                                            <div class="mm_d_cards">
-                                                <img class="img-fluid" src="images/md-card1.png" alt="">
-                                                <div class="mdCard_content">
-                                                    <h5>Name: Olivia</h5>
-                                                    <h5>Age: 29</h5>
-                                                </div>
-                                            </div>
-                                        </a>
+                            <div class="suggestion_group mt-5">
+                                <div class="sg_head">
+                                    <div>
+                                        <h3>My Groups</h3>
+                                        <p>Groups you might be interested in.</p>
                                     </div>
-                                    <div class="col-3">
-                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
-                                            <div class="mm_d_cards">
-                                                <img class="img-fluid" src="images/md-card12.png" alt="">
-                                                <div class="mdCard_content">
-                                                    <h5>Name: Olivia</h5>
-                                                    <h5>Age: 29</h5>
+                                    <a href="dashboard_my_group_see_all.php">SEE ALL</a>
+                                </div>
+                                <div class="group-carousel owl-carousel owl-theme">
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img1.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                        <h5>Texas</h5>
+                                                        <h5><span>• 2,351 Members</span></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-2 scb_btn">
+                                                    <a href="dashboard_group_2.php" class="button-container-2 d-flex">
+                                                        <span class="mas">View Details</span>
+                                                        <button type="button" name="Hover">View Details</button>
+                                                    </a>
+                                                    <a href="dashboard_chat.php" class="button-container-2 d-flex">
+                                                        <span class="mas">Start Chat</span>
+                                                        <button type="button" name="Hover">Start Chat</button>
+                                                    </a>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img2.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                        <h5>Candidate</h5>
+                                                        <h5><span>• 1,23M Members</span></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-2 scb_btn">
+                                                    <a href="dashboard_group_3.php" class="button-container-2 d-flex">
+                                                        <span class="mas">View Details</span>
+                                                        <button type="button" name="Hover">View Details</button>
+                                                    </a>
+                                                    <a href="dashboard_chat.php" class="button-container-2 d-flex">
+                                                        <span class="mas">Start Chat</span>
+                                                        <button type="button" name="Hover">Start Chat</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img4.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                        <h5>Owner</h5>
+                                                        <h5><span>• 2,351 Members</span></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-2 scb_btn">
+                                                    <a href="dashboard_group_2.php" class="button-container-2 d-flex">
+                                                        <span class="mas">View Details</span>
+                                                        <button type="button" name="Hover">View Details</button>
+                                                    </a>
+                                                    <a href="dashboard_chat.php" class="button-container-2 d-flex">
+                                                        <span class="mas">Start Chat</span>
+                                                        <button type="button" name="Hover">Start Chat</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img3.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                        <h5>Candidate</h5>
+                                                        <h5><span>• 124,213 Members</span></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-2 scb_btn">
+                                                    <a href="dashboard_group_3.php" class="button-container-2 d-flex">
+                                                        <span class="mas">View Details</span>
+                                                        <button type="button" name="Hover">View Details</button>
+                                                    </a>
+                                                    <a href="dashboard_chat.php" class="button-container-2 d-flex">
+                                                        <span class="mas">Start Chat</span>
+                                                        <button type="button" name="Hover">Start Chat</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img2.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                        <h5>Candidate</h5>
+                                                        <h5><span>• 1,23M Members</span></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-2 scb_btn">
+                                                    <a href="dashboard_group_3.php" class="button-container-2 d-flex">
+                                                        <span class="mas">View Details</span>
+                                                        <button type="button" name="Hover">View Details</button>
+                                                    </a>
+                                                    <a href="dashboard_chat.php" class="button-container-2 d-flex">
+                                                        <span class="mas">Start Chat</span>
+                                                        <button type="button" name="Hover">Start Chat</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nav-event" role="tabpanel" aria-labelledby="nav-event-tab"
@@ -1640,9 +1821,20 @@ $page = 'home';
                                 </div>
 
                             </div>
-                            <a class="btn6" href="dashboard_add_event.php">
-                                <img src="images/calender_star.png" alt="">
-                                Add Event</a>
+                             <div>
+                                <a href="dashboard_add_event.php" class="button-container-2 ae_btn2 d-inline-flex">
+                                    <span class="mas"><img src="images/calender_star.png" alt="">
+                                        Add Event</span>
+                                    <button type="button" name="Hover"><img src="images/calender_star.png" alt="">
+                                        Add Event</button>
+                                </a>
+                                <a href="dashboard_my_event.php" class="button-container-2 ae_btn2 d-inline-flex">
+                                    <span class="mas"><img src="images/calender_star.png" alt="">
+                                        My Event</span>
+                                    <button type="button" name="Hover"><img src="images/calender_star.png" alt="">
+                                    My Event</button>
+                                </a>
+                            </div>
                         </div>
 
                     </div>

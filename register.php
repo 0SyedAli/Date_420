@@ -56,8 +56,13 @@ $page = 'home';
                                 <option value="1">Female</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn-theme2">Continue<i
-                                class="fa-solid fa-arrow-right-long"></i></button>
+                        <!-- <button type="submit" class="btn-theme2">Continue<i
+                                class="fa-solid fa-arrow-right-long"></i></button> -->
+                        <div class="button-container-2 me-0">
+                            <span class="mas">Continue<i class="fa-solid fa-arrow-right-long"></i></span>
+                            <button type="submit" name="Hover">Continue<i
+                                    class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -70,7 +75,7 @@ $page = 'home';
 ?>
 
 <script>
-    AOS.init({
-            once: true,
-        });
+AOS.init({
+    once: true,
+});
 </script>

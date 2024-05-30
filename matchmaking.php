@@ -405,8 +405,10 @@ $page = 'home';
                     </tbody>
                 </table>
                 <div class="d-flex justify-content-end align-items-center">
-                    <button class="btn btn-theme2 d-flex align-items-center gap-2">Sumbit<i
-                            class="fa-solid fa-arrow-right"></i></button>
+                    <a href="javascript:;" class="button-container-2 d-flex m-0">
+                        <span class="mas">Submit<i class="fa-solid fa-arrow-right ps-2"></i></span>
+                        <button type="submit" name="Hover">Submit<i class="fa-solid fa-arrow-right ps-2"></i></button>
+                    </a>
                 </div>
             </div>
         </form>
@@ -420,7 +422,7 @@ $page = 'dashboard';
 ?>
 
 <script>
-    AOS.init({
-            once: true,
-        });
+AOS.init({
+    once: true,
+});
 </script>

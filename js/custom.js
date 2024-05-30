@@ -330,7 +330,7 @@ if (formFile4) {
   });
 }
 
-$(".owl-carousel").owlCarousel({
+$(".ids-carousel").owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
@@ -354,28 +354,70 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
+$(".group-carousel").owlCarousel({
+  // loop: true,
+  margin: 10,
+  nav: false,
+  dots: true,
+  navText: [
+    "<i class='fa-solid fa-chevron-left'></i>",
+    "<i class='fa-solid fa-chevron-right'></i>",
+  ],
+  autoplay: true,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 4,
+    },
+  },
+});
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Get the elements
-  const uploadDiv = document.querySelector('.ae_upload_image');
-  const fileInput = document.getElementById('imageUpload');
-  const uploadedImage = document.getElementById('uploadedImage');
+  const uploadDiv = document.querySelector(".ae_upload_image");
+  const fileInput = document.getElementById("imageUpload");
+  const uploadedImage = document.getElementById("uploadedImage");
 
   // When the user clicks on the upload div, trigger the file input click
-  uploadDiv.addEventListener('click', function() {
-      fileInput.click();
+  uploadDiv.addEventListener("click", function () {
+    fileInput.click();
   });
 
   // When the user selects a file
-  fileInput.addEventListener('change', function(event) {
-      const file = event.target.files[0];
-      if (file) {
-          const reader = new FileReader();
-          reader.onload = function(e) {
-              uploadedImage.src = e.target.result;
-              uploadedImage.style.display = 'block';
-          }
-          reader.readAsDataURL(file);
-      }
+  fileInput.addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        uploadedImage.src = e.target.result;
+        uploadedImage.style.display = "block";
+      };
+      reader.readAsDataURL(file);
+    }
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hotlistButtons = document.querySelectorAll(".m_pg");
+
+  hotlistButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Remove the "active" class from all buttons
+      hotlistButtons.forEach((btn) => btn.classList.remove("active"));
+      // Add the "active" class to the clicked button
+      this.classList.add("active");
+    });
+  });
+});
+
+$("#group_search").on("shown.bs.modal", function () {
+  setTimeout(function () {
+    $("#group_search").modal("hide");
+  }, 1500);
 });

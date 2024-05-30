@@ -48,7 +48,7 @@ include 'includes/header_dash.php';
                                     <div class="dash_slide_container">
                                         <h4><i class="fa-solid fa-heart"></i>Hot List</h4>
                                         <div class="item_dash_slides">
-                                            <div class="owl-carousel owl-theme">
+                                            <div class="ids-carousel owl-carousel owl-theme">
                                                 <div class="ids">
                                                     <a href="dashboard_my-matches.php">
                                                         <div class="mm_d_cards">
@@ -265,7 +265,12 @@ include 'includes/header_dash.php';
                                         </div>
                                     </div>
                                     <div class=" dash_search align-items-center gap-3 d-flex">
-                                        <a href="javascript:;" class="btn-theme2">Search</a>
+                                        <a href="javascript:;">
+                                            <div class="button-container-2 me-0">
+                                                <span class="mas">Search</span>
+                                                <button type="button" name="Hover">Search</button>
+                                            </div>
+                                        </a>
                                         <a href="javascript:;" class="ad_se">Advanced Search</a>
                                     </div>
                                 </div>
@@ -296,7 +301,12 @@ include 'includes/header_dash.php';
                                             </div>
                                         </div>
                                         <div class="text-center pt-2 pb-3">
-                                            <a href="dashboard_matches.php" class="btn-theme2">View All</a>
+                                            <a href="dashboard_matches.php">
+                                                <div class="button-container-2 d-inline-flex">
+                                                    <span class="mas">View All</span>
+                                                    <button type="button" name="Hover">View All</button>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <br>
@@ -313,7 +323,7 @@ include 'includes/header_dash.php';
                                                     profile details</a></li>
                                             <li><a href="dashboard_search.php"><i class="fa-solid fa-circle"></i>Change
                                                     matchmaking settings</a></li>
-                                            <li><a href="#;"><i class="fa-solid fa-circle"></i>Look
+                                            <li><a href="dashboard_chat.php"><i class="fa-solid fa-circle"></i>Look
                                                     who’s in</a></li>
                                         </ul>
                                         <h5>Feel free to participate in our community!</h5>
@@ -1486,9 +1496,12 @@ include 'includes/header_dash.php';
                                         <input type="search" placeholder="Search Groups">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                     </div>
-                                    <a class="btn6" href="dashboard_create_group.php">
-                                        <img src="images/team.png" alt="">
-                                        Create Group</a>
+                                    <a href="dashboard_create_group.php" class="button-container-2 d-flex">
+                                        <span class="mas"><img src="images/team.png" alt="">
+                                            Create Group</span>
+                                        <button type="button" name="Hover"><img src="images/team.png" alt="">
+                                            Create Group</button>
+                                    </a>
                                 </div>
                             </div>
                             <div class="suggestion_group">
@@ -1497,10 +1510,10 @@ include 'includes/header_dash.php';
                                         <h3>Suggested Groups</h3>
                                         <p>Groups you might be interested in.</p>
                                     </div>
-                                    <a href="#;">SEE ALL</a>
+                                    <a href="dashboard_sugestion_group_see_all.php">SEE ALL</a>
                                 </div>
-                                <div class="row g-0">
-                                    <div class="col-3">
+                                <div class="group-carousel owl-carousel owl-theme">
+                                    <div class="">
                                         <div class="sg_card">
                                             <img src="images/sg_img1.svg" class="img-fluid" alt="">
                                             <div class="sg_card_body">
@@ -1511,14 +1524,14 @@ include 'includes/header_dash.php';
                                                         <h5><span>• 2,351 Members</span></h5>
                                                     </div>
                                                 </div>
-                                                <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                <a href="javascript:;" class="button-container-2 d-flex">
                                                     <span class="mas">Join Group</span>
                                                     <button type="button" name="Hover">Join Group</button>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="">
                                         <div class="sg_card">
                                             <img src="images/sg_img2.svg" class="img-fluid" alt="">
                                             <div class="sg_card_body">
@@ -1529,14 +1542,14 @@ include 'includes/header_dash.php';
                                                         <h5><span>• 1,23M Members</span></h5>
                                                     </div>
                                                 </div>
-                                                <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                <a href="javascript:;" class="button-container-2 d-flex">
                                                     <span class="mas">Join Group</span>
                                                     <button type="button" name="Hover">Join Group</button>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="">
                                         <div class="sg_card">
                                             <img src="images/sg_img4.svg" class="img-fluid" alt="">
                                             <div class="sg_card_body">
@@ -1547,14 +1560,14 @@ include 'includes/header_dash.php';
                                                         <h5><span>• 2,351 Members</span></h5>
                                                     </div>
                                                 </div>
-                                                <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                <a href="javascript:;" class="button-container-2 d-flex">
                                                     <span class="mas">Join Group</span>
                                                     <button type="button" name="Hover">Join Group</button>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="">
                                         <div class="sg_card">
                                             <img src="images/sg_img3.svg" class="img-fluid" alt="">
                                             <div class="sg_card_body">
@@ -1565,7 +1578,25 @@ include 'includes/header_dash.php';
                                                         <h5><span>• 124,213 Members</span></h5>
                                                     </div>
                                                 </div>
-                                                <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                <a href="javascript:;" class="button-container-2 d-flex">
+                                                    <span class="mas">Join Group</span>
+                                                    <button type="button" name="Hover">Join Group</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img2.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                        <h5>California</h5>
+                                                        <h5><span>• 1,23M Members</span></h5>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:;" class="button-container-2 d-flex">
                                                     <span class="mas">Join Group</span>
                                                     <button type="button" name="Hover">Join Group</button>
                                                 </a>
@@ -1573,7 +1604,6 @@ include 'includes/header_dash.php';
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="suggestion_group mt-5">
                                 <div class="sg_head">
@@ -1581,10 +1611,10 @@ include 'includes/header_dash.php';
                                         <h3>My Groups</h3>
                                         <p>Groups you might be interested in.</p>
                                     </div>
-                                    <a href="#;">SEE ALL</a>
+                                    <a href="dashboard_my_group_see_all.php">SEE ALL</a>
                                 </div>
-                                <div class="row g-0">
-                                    <div class="col-3">
+                                <div class="group-carousel owl-carousel owl-theme">
+                                    <div class="">
                                         <div class="sg_card">
                                             <img src="images/sg_img1.svg" class="img-fluid" alt="">
                                             <div class="sg_card_body">
@@ -1596,11 +1626,11 @@ include 'includes/header_dash.php';
                                                     </div>
                                                 </div>
                                                 <div class="d-flex gap-2 scb_btn">
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                    <a href="dashboard_group_2.php" class="button-container-2 d-flex">
                                                         <span class="mas">View Details</span>
                                                         <button type="button" name="Hover">View Details</button>
                                                     </a>
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                    <a href="dashboard_chat.php" class="button-container-2 d-flex">
                                                         <span class="mas">Start Chat</span>
                                                         <button type="button" name="Hover">Start Chat</button>
                                                     </a>
@@ -1608,7 +1638,7 @@ include 'includes/header_dash.php';
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="">
                                         <div class="sg_card">
                                             <img src="images/sg_img2.svg" class="img-fluid" alt="">
                                             <div class="sg_card_body">
@@ -1620,11 +1650,11 @@ include 'includes/header_dash.php';
                                                     </div>
                                                 </div>
                                                 <div class="d-flex gap-2 scb_btn">
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                    <a href="dashboard_group_3.php" class="button-container-2 d-flex">
                                                         <span class="mas">View Details</span>
                                                         <button type="button" name="Hover">View Details</button>
                                                     </a>
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                    <a href="dashboard_chat.php" class="button-container-2 d-flex">
                                                         <span class="mas">Start Chat</span>
                                                         <button type="button" name="Hover">Start Chat</button>
                                                     </a>
@@ -1632,7 +1662,7 @@ include 'includes/header_dash.php';
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="">
                                         <div class="sg_card">
                                             <img src="images/sg_img4.svg" class="img-fluid" alt="">
                                             <div class="sg_card_body">
@@ -1644,11 +1674,11 @@ include 'includes/header_dash.php';
                                                     </div>
                                                 </div>
                                                 <div class="d-flex gap-2 scb_btn">
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                    <a href="dashboard_group_2.php" class="button-container-2 d-flex">
                                                         <span class="mas">View Details</span>
                                                         <button type="button" name="Hover">View Details</button>
                                                     </a>
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                    <a href="dashboard_chat.php" class="button-container-2 d-flex">
                                                         <span class="mas">Start Chat</span>
                                                         <button type="button" name="Hover">Start Chat</button>
                                                     </a>
@@ -1656,7 +1686,7 @@ include 'includes/header_dash.php';
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="">
                                         <div class="sg_card">
                                             <img src="images/sg_img3.svg" class="img-fluid" alt="">
                                             <div class="sg_card_body">
@@ -1668,11 +1698,35 @@ include 'includes/header_dash.php';
                                                     </div>
                                                 </div>
                                                 <div class="d-flex gap-2 scb_btn">
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                    <a href="dashboard_group_3.php" class="button-container-2 d-flex">
                                                         <span class="mas">View Details</span>
                                                         <button type="button" name="Hover">View Details</button>
                                                     </a>
-                                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                                    <a href="dashboard_chat.php" class="button-container-2 d-flex">
+                                                        <span class="mas">Start Chat</span>
+                                                        <button type="button" name="Hover">Start Chat</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img2.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                        <h5>Candidate</h5>
+                                                        <h5><span>• 1,23M Members</span></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-2 scb_btn">
+                                                    <a href="dashboard_group_3.php" class="button-container-2 d-flex">
+                                                        <span class="mas">View Details</span>
+                                                        <button type="button" name="Hover">View Details</button>
+                                                    </a>
+                                                    <a href="dashboard_chat.php" class="button-container-2 d-flex">
                                                         <span class="mas">Start Chat</span>
                                                         <button type="button" name="Hover">Start Chat</button>
                                                     </a>
@@ -1681,8 +1735,8 @@ include 'includes/header_dash.php';
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
+                            
                             <!-- <div class="gd_item">
                                 <h3>Group 1</h3>
                                 <div class="row row_group">
@@ -1890,56 +1944,47 @@ include 'includes/header_dash.php';
                                 </div>
 
                             </div>
-                            <a class="btn6" href="dashboard_add_event.php">
-                                <img src="images/calender_star.png" alt="">
-                                Add Event</a>
+                             <div>
+                                <a href="dashboard_add_event.php" class="button-container-2 ae_btn2 d-inline-flex">
+                                    <span class="mas"><img src="images/calender_star.png" alt="">
+                                        Add Event</span>
+                                    <button type="button" name="Hover"><img src="images/calender_star.png" alt="">
+                                        Add Event</button>
+                                </a>
+                                <a href="dashboard_my_event.php" class="button-container-2 ae_btn2 d-inline-flex">
+                                    <span class="mas"><img src="images/calender_star.png" alt="">
+                                        My Event</span>
+                                    <button type="button" name="Hover"><img src="images/calender_star.png" alt="">
+                                    My Event</button>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
-                    <div class="tab-pane fade" id="nav-blog" role="tabpanel" aria-labelledby="nav-blog-tab"
+                    <div class="tab-pane fade show active" id="nav-blog" role="tabpanel" aria-labelledby="nav-blog-tab"
                         tabindex="0">
-                        <div class="blog_dashboard">
-                            <h2>Blogs</h2>
+                        <div class="blog_dashboard add_blog">
+                            <h2>Add Blogs</h2>
                             <div class="add_event">
                                 <form action="javascript:;">
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="ae_left">
                                                 <div class="row">
-                                                    <div class="ae_fields col-12">
-                                                        <input type="text" class="form-control" placeholder="Title">
-                                                    </div>
-                                                    <div class="ae_fields position-relative col-7">
-                                                        <div class="ae_select">
-                                                            <select>
-                                                                <option value="0">Date</option>
-                                                                <option value="1">Option One</option>
-                                                                <option value="2">Option Two</option>
-                                                                <option value="3">Option Three</option>
-                                                                <option value="4">Option Four</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ae_fields position-relative col-5">
-                                                        <div class="ae_select">
-                                                            <select>
-                                                                <option value="0">Time</option>
-                                                                <option value="1">Option One</option>
-                                                                <option value="2">Option Two</option>
-                                                                <option value="3">Option Three</option>
-                                                                <option value="4">Option Four</option>
-                                                            </select>
-                                                        </div>
+                                                    <div class="ae_fields ae_title col-12">
+                                                        <input type="text" class="form-control" placeholder="Title"
+                                                            disabled>
                                                     </div>
                                                     <div class="ae_fields col-12">
-                                                        <input type="text" class="form-control" placeholder="About">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Blog Content">
                                                     </div>
                                                     <div class="ae_fields textarea_field col-12">
-                                                        <textarea name="" rows="6"
-                                                            placeholder="Describe the meeting..."></textarea>
+                                                        <textarea name="" rows="15"
+                                                            placeholder="1000 words..."></textarea>
                                                     </div>
                                                 </div>
-                                                <div class="ae_more_info">
+                                                <!-- <div class="ae_more_info">
                                                     <div class="row">
                                                         <div class="col-12">
                                                             <div class="ae_radio">
@@ -1961,7 +2006,7 @@ include 'includes/header_dash.php';
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="col-6">
@@ -1980,9 +2025,15 @@ include 'includes/header_dash.php';
                                                     </div>
                                                 </div>
                                                 <div class="text-center">
-                                                    <a class="btn6" href="dashboard_create_group.php">
-                                                        <img src="images/calender_star.png" alt="">
-                                                        Add New Event</a>
+                                                    <a href="dashboard_create_group.php" data-bs-toggle="modal"
+                                                        data-bs-target="#event_candidate"
+                                                        class="button-container-2 ae_btn2 d-inline-flex">
+                                                        <span class="mas"><img src="images/calender_star.png" alt="">
+                                                            Add New Blog</span>
+                                                        <button type="button" name="Hover"><img
+                                                                src="images/calender_star.png" alt="">
+                                                            Add New Blog</button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>

@@ -2,7 +2,6 @@
 $page = 'Home';
 $pageDesc = '""';
 include 'includes/header_dash.php';
-$page = 'home';
 ?>
 <section class="dashboard_section">
     <div class="container">
@@ -18,22 +17,22 @@ $page = 'home';
                         <button class="nav-link" id="nav-my-match-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-my-match" type="button" role="tab" aria-controls="nav-my-match"
                             aria-selected="false">My Matches</button>
-                        <button class="nav-link active" id="nav-subcribe-tab" data-bs-toggle="tab"
+                        <button class="nav-link" id="nav-subcribe-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-subcribe" type="button" role="tab" aria-controls="nav-subcribe"
                             aria-selected="false">Subscribe</button>
                         <button class="nav-link" id="nav-search-tab" data-bs-toggle="tab" data-bs-target="#nav-search"
                             type="button" role="tab" aria-controls="nav-search" aria-selected="false">Search</button>
                         <button class="nav-link" id="nav-group-tab" data-bs-toggle="tab" data-bs-target="#nav-group"
                             type="button" role="tab" aria-controls="nav-group" aria-selected="false">Groups</button>
-                        <!-- <button class="nav-link " id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
-                            type="button" role="tab" aria-controls="nav-event" aria-selected="false">Events</button>
+                        <!-- 
                         <button class="nav-link" id="nav-blog-tab" data-bs-toggle="tab" data-bs-target="#nav-blog"
                             type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blogs</button>
                         <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat"
                             type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button> -->
-                        <button class="nav-link" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
-                            type="button" role="tab" aria-controls="nav-event" aria-selected="false">Events</button>
-                        <button class="nav-link " id="nav-blog-tab" data-bs-toggle="tab" data-bs-target="#nav-blog"
+                        <button class="nav-link active" id="nav-event-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-event" type="button" role="tab" aria-controls="nav-event"
+                            aria-selected="false">Events</button>
+                        <button class="nav-link" id="nav-blog-tab" data-bs-toggle="tab" data-bs-target="#nav-blog"
                             type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blogs</button>
                         <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat"
                             type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button>
@@ -345,7 +344,7 @@ $page = 'home';
                     <div class="tab-pane fade" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab"
                         tabindex="0">
                         <div class="photo_dashboard">
-                            <div class="row align-items-center">
+                            <div class="row ">
                                 <div class="col-6">
                                     <h2>User photo</h2>
                                     <div class="file_upload_regis my-4">
@@ -357,7 +356,6 @@ $page = 'home';
                                     </div>
                                     <div>
                                         <ul class="imageList d-flex gap-3">
-                                            <!-- Placeholder for uploaded images -->
                                         </ul>
                                     </div>
                                 </div>
@@ -381,9 +379,17 @@ $page = 'home';
                                     <a href="dashboard_my-matches.php">
                                         <div class="mm_d_cards">
                                             <img class="img-fluid" src="images/md-card1.png" alt="">
-                                            <div class="mdCard_content">
-                                                <h5>Name: Olivia</h5>
-                                                <h5>Age: 29</h5>
+                                            <div
+                                                class="mdCard_content d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                                <div class="heart">
+                                                    <input type="checkbox" class="heart__checkbox">
+                                                    <div class="heart__icon"><i class="fa-regular fa-heart"></i></div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -392,9 +398,16 @@ $page = 'home';
                                     <a href="dashboard_my-matches.php">
                                         <div class="mm_d_cards">
                                             <img class="img-fluid" src="images/md-card12.png" alt="">
-                                            <div class="mdCard_content">
-                                                <h5>Name: Olivia</h5>
-                                                <h5>Age: 29</h5>
+                                            <div
+                                                class="mdCard_content d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                                <div class="heart">
+                                                    <input type="checkbox" class="heart__checkbox">
+                                                    <div class="heart__icon"><i class="fa-regular fa-heart"></i></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </a>
@@ -403,9 +416,17 @@ $page = 'home';
                                     <a href="dashboard_my-matches.php">
                                         <div class="mm_d_cards">
                                             <img class="img-fluid" src="images/md-card11.png" alt="">
-                                            <div class="mdCard_content">
-                                                <h5>Name: Olivia</h5>
-                                                <h5>Age: 29</h5>
+                                            <div
+                                                class="mdCard_content d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                                <div class="heart">
+                                                    <input type="checkbox" class="heart__checkbox">
+                                                    <div class="heart__icon"><i class="fa-regular fa-heart"></i></div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -415,9 +436,17 @@ $page = 'home';
                                     <a href="dashboard_my-matches.php">
                                         <div class="mm_d_cards">
                                             <img class="img-fluid" src="images/md-card10.png" alt="">
-                                            <div class="mdCard_content">
-                                                <h5>Name: Olivia</h5>
-                                                <h5>Age: 29</h5>
+                                            <div
+                                                class="mdCard_content d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                                <div class="heart">
+                                                    <input type="checkbox" class="heart__checkbox">
+                                                    <div class="heart__icon"><i class="fa-regular fa-heart"></i></div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -426,9 +455,17 @@ $page = 'home';
                                     <a href="dashboard_my-matches.php">
                                         <div class="mm_d_cards">
                                             <img class="img-fluid" src="images/md-card9.png" alt="">
-                                            <div class="mdCard_content">
-                                                <h5>Name: Olivia</h5>
-                                                <h5>Age: 29</h5>
+                                            <div
+                                                class="mdCard_content d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                                <div class="heart">
+                                                    <input type="checkbox" class="heart__checkbox">
+                                                    <div class="heart__icon"><i class="fa-regular fa-heart"></i></div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -437,9 +474,17 @@ $page = 'home';
                                     <a href="dashboard_my-matches.php">
                                         <div class="mm_d_cards">
                                             <img class="img-fluid" src="images/md-card8.png" alt="">
-                                            <div class="mdCard_content">
-                                                <h5>Name: Olivia</h5>
-                                                <h5>Age: 29</h5>
+                                            <div
+                                                class="mdCard_content d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                                <div class="heart">
+                                                    <input type="checkbox" class="heart__checkbox">
+                                                    <div class="heart__icon"><i class="fa-regular fa-heart"></i></div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -449,9 +494,17 @@ $page = 'home';
                                     <a href="dashboard_my-matches.php">
                                         <div class="mm_d_cards">
                                             <img class="img-fluid" src="images/md-card7.png" alt="">
-                                            <div class="mdCard_content">
-                                                <h5>Name: Olivia</h5>
-                                                <h5>Age: 29</h5>
+                                            <div
+                                                class="mdCard_content d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                                <div class="heart">
+                                                    <input type="checkbox" class="heart__checkbox">
+                                                    <div class="heart__icon"><i class="fa-regular fa-heart"></i></div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -460,9 +513,17 @@ $page = 'home';
                                     <a href="dashboard_my-matches.php">
                                         <div class="mm_d_cards">
                                             <img class="img-fluid" src="images/md-card6.png" alt="">
-                                            <div class="mdCard_content">
-                                                <h5>Name: Olivia</h5>
-                                                <h5>Age: 29</h5>
+                                            <div
+                                                class="mdCard_content d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                                <div class="heart">
+                                                    <input type="checkbox" class="heart__checkbox">
+                                                    <div class="heart__icon"><i class="fa-regular fa-heart"></i></div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -471,9 +532,17 @@ $page = 'home';
                                     <a href="dashboard_my-matches.php">
                                         <div class="mm_d_cards">
                                             <img class="img-fluid" src="images/md-card5.png" alt="">
-                                            <div class="mdCard_content">
-                                                <h5>Name: Olivia</h5>
-                                                <h5>Age: 29</h5>
+                                            <div
+                                                class="mdCard_content d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                                <div class="heart">
+                                                    <input type="checkbox" class="heart__checkbox">
+                                                    <div class="heart__icon"><i class="fa-regular fa-heart"></i></div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -483,9 +552,17 @@ $page = 'home';
                                     <a href="dashboard_my-matches.php">
                                         <div class="mm_d_cards">
                                             <img class="img-fluid" src="images/md-card8.png" alt="">
-                                            <div class="mdCard_content">
-                                                <h5>Name: Olivia</h5>
-                                                <h5>Age: 29</h5>
+                                            <div
+                                                class="mdCard_content d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                                <div class="heart">
+                                                    <input type="checkbox" class="heart__checkbox">
+                                                    <div class="heart__icon"><i class="fa-regular fa-heart"></i></div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -494,9 +571,17 @@ $page = 'home';
                                     <a href="dashboard_my-matches.php">
                                         <div class="mm_d_cards">
                                             <img class="img-fluid" src="images/md-card7.png" alt="">
-                                            <div class="mdCard_content">
-                                                <h5>Name: Olivia</h5>
-                                                <h5>Age: 29</h5>
+                                            <div
+                                                class="mdCard_content d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                                <div class="heart">
+                                                    <input type="checkbox" class="heart__checkbox">
+                                                    <div class="heart__icon"><i class="fa-regular fa-heart"></i></div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </a>
@@ -505,60 +590,251 @@ $page = 'home';
                                     <a href="dashboard_my-matches.php">
                                         <div class="mm_d_cards">
                                             <img class="img-fluid" src="images/md-card6.png" alt="">
-                                            <div class="mdCard_content">
-                                                <h5>Name: Olivia</h5>
-                                                <h5>Age: 29</h5>
+                                            <div
+                                                class="mdCard_content d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                                <div class="heart">
+                                                    <input type="checkbox" class="heart__checkbox">
+                                                    <div class="heart__icon"><i class="fa-regular fa-heart"></i></div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                             </div>
+                            <div class="pagination_section">
+                                <div class="pagination justify-content-center gap-3">
+                                    <button class=""></button>
+                                    <a class="m_pg active" href="javascript:;">1</a>
+                                    <a class="m_pg" href="javascript:;" class="active">2</a>
+                                    <a class="m_pg" href="javascript:;">3</a>
+                                    <a class="m_pg" href="javascript:;">4</a>
+                                    <a class="m_pg" href="javascript:;">5</a>
+                                    <a class="m_pg" href="javascript:;">6</a>
+                                    <button></button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade show active" id="nav-subcribe" role="tabpanel"
-                        aria-labelledby="nav-subcribe-tab" tabindex="0">
-                        <div class="search_dashboard subcribe">
-                            <h2>Subscribe</h2>
-                            <div class="sd_inner">
-                                <div class="row align-items-center">
-                                    <div class="col-4 position-relative">
-                                        <div class="subc1">
-                                            <h4>Current Package</h4>
-                                            <h3>FREE Trial</h3>
-                                        </div>
-                                        <div class="subline"></div>
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="row align-items-center">
-                                            <div class="col-8">
-                                                <div class="subc2">
-                                                    <h4>Features</h4>
-                                                    <div class="d-flex gap-3 pt-3">
-                                                        <ul>
-                                                            <li>- Chat with Anyone</li>
-                                                            <li>- Create or Join Group</li>
-                                                            <li>- Create Events</li>
-                                                        </ul>
-                                                        <ul>
-                                                            <li>- Chat with Anyone</li>
-                                                            <li>- Create or Join Group</li>
-                                                            <li>- Create Events</li>
-                                                        </ul>
+                        <!-- <div class="profile_section">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="my_profile">
+                                            <div class="mp_left">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="images/profile_1.png" class="img-fluid" alt="profile">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="mpl_table">
+                                                            <div class="table-responsive">
+                                                                <table>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>
+                                                                                <h4>Name:</h4>
+                                                                            </th>
+                                                                            <td>
+                                                                                <h5>Kaden Salazar</h5>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>
+                                                                                <h4>I am:</h4>
+                                                                            </th>
+                                                                            <td>
+                                                                                <h5>Male</h5>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>
+                                                                                <h4>Looking for:</h4>
+                                                                            </th>
+                                                                            <td>
+                                                                                <h5>Female</h5>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>
+                                                                                <h4>Here for:</h4>
+                                                                            </th>
+                                                                            <td>
+                                                                                <h5>Fun, Dating</h5>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>
+                                                                                <h4>Match desired:</h4>
+                                                                            </th>
+                                                                            <td>
+                                                                                <h5>40 y.o</h5>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-4 position-relative">
-                                                <div class="subline2"></div>
-                                                <div class="subc3">
-                                                    <a href="#;" class="btn4">Upgrade your <br> plan</a>
-                                                    <a href="#;" class="btn5">Cancle</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="pr_my_user">
+                                            <h2>User photo</h2>
+                                            <div class="user_images">
+                                                <img class="img-fluid" src="images/user_img1.png" alt="">
+                                                <img class="img-fluid" src="images/user_img2.png" alt="">
+                                                <img class="img-fluid" src="images/user_img3.png" alt="">
+                                                <img class="img-fluid" src="images/user_img4.png" alt="">
+                                                <img class="img-fluid" src="images/user_img1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="pr_about">
+                                            <div>
+
+                                                <div class="edit_pen">
+                                                    <h2>About Me</h2>
+                                                    <a href="javascript:;" class="e_pen"><i
+                                                            class="fa-thin fa-pencil"></i></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                    ultrices eros in. Lobortis
+                                                    elementum nibh tellus molestie nunc. Libero nunc consequat interdum
+                                                    varius sit amet mattis
+                                                    vulputate. Duis at consectetur lorem donec massa. Eget nulla
+                                                    facilisi etiam dignissim diam
+                                                    quis enim lobortis condimentum lacinia quis.</p>
+                                                <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris
+                                                    ultrices eros in. Lobortis
+                                                    elementum nibh tellus molestie nunc. Libero nunc consequat interdum
+                                                    varius sit amet mattis
+                                                    vulputate. Duis at consectetur lorem donec massa. Eget nulla
+                                                    facilisi etiam dignissim diam
+                                                    quis enim lobortis condimentum lacinia quis.Pharetra convallis
+                                                    posuere morbi leo. Vestibulum
+                                                    lectus mauris ultrices eros in. Lobortis elementum nibh tellus
+                                                    molestie nunc. Libero nunc
+                                                    consequat interdum varius sit amet mattis vulputate. Duis at
+                                                    consectetur lorem donec massa.
+                                                    Eget nulla facilisi etiam dignissim diam quis enim lobortis
+                                                    condimentum lacinia quis.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="pr-appearance">
+                                            <h2>Appearance</h2>
+                                            <div class="mpl_table">
+                                                <div class="table-responsive">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>
+                                                                    <h4>Ethnicity:</h4>
+                                                                </th>
+                                                                <td>
+                                                                    <h5>Asian</h5>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <h4>Body Type:</h4>
+                                                                </th>
+                                                                <td>
+                                                                    <h5>Big and Beautiful</h5>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <h4>Hair Color:</h4>
+                                                                </th>
+                                                                <td>
+                                                                    <h5>Brown</h5>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <h4>Eye Color:</h4>
+                                                                </th>
+                                                                <td>
+                                                                    <h5>Green</h5>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="life_style pr-appearance">
+                                            <h2>Life Style</h2>
+                                            <div class="mpl_table">
+                                                <div class="table-responsive">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>
+                                                                    <h4>Hobbies:</h4>
+                                                                </th>
+                                                                <td>
+                                                                    <h5>Swimming, sports</h5>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <h4>My own words:</h4>
+                                                                </th>
+                                                                <td>
+                                                                    <h5>Ready to 420</h5>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <h4>Smoking:</h4>
+                                                                </th>
+                                                                <td>
+                                                                    <h5>Always</h5>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <h4>Drinking:</h4>
+                                                                </th>
+                                                                <td>
+                                                                    <h5>Socially </h5>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="table-responsive">
+                        </div> -->
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-subcribe" role="tabpanel" aria-labelledby="nav-subcribe-tab"
+                        tabindex="0">
+                        <!-- <div class="search_dashboard">
+                            <h2>Subscribe</h2>
+                            <div class="table-responsive">
                                 <div class="s_table">
                                     <table class="w-100">
                                         <tr>
@@ -752,7 +1028,55 @@ $page = 'home';
                                     </div>
                                 </div>
 
-                            </div> -->
+                            </div>
+                        </div> -->
+                        <div class="search_dashboard subcribe">
+                            <h2>Subscribe</h2>
+                            <div class="sd_inner">
+                                <div class="row align-items-center">
+                                    <div class="col-4 position-relative">
+                                        <div class="subc1">
+                                            <h4>Current Package</h4>
+                                            <h3>FREE Trial</h3>
+                                        </div>
+                                        <div class="subline"></div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="row align-items-center">
+                                            <div class="col-8">
+                                                <div class="subc2">
+                                                    <h4>Features</h4>
+                                                    <div class="d-flex gap-3 pt-3">
+                                                        <ul>
+                                                            <li>- Chat with Anyone</li>
+                                                            <li>- Create or Join Group</li>
+                                                            <li>- Create Events</li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>- Chat with Anyone</li>
+                                                            <li>- Create or Join Group</li>
+                                                            <li>- Create Events</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 position-relative">
+                                                <div class="subline2"></div>
+                                                <div class="subc3">
+                                                    <a href="dashboard_sub_pkgs.php" class="btn4">Upgrade your <br>
+                                                        plan</a>
+                                                    <a href="javascript:;">
+                                                        <div class="button-container-2 me-0">
+                                                            <span class="mas">Cancel</span>
+                                                            <button type="button" name="Hover">Cancel</button>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="tab-pane fade nav-search" id="nav-search" role="tabpanel"
@@ -1197,7 +1521,7 @@ $page = 'home';
                                     </a>
                                 </div>
                             </div>
-                            <div class="suggestion_group">
+                            <div class="suggestion_group ">
                                 <div class="sg_head">
                                     <div>
                                         <h3>Suggested Groups</h3>
@@ -1430,151 +1754,148 @@ $page = 'home';
                                 </div>
                             </div>
                             
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-event" role="tabpanel" aria-labelledby="nav-event-tab"
-                        tabindex="0">
-                        <div class="event_dashboard">
-                            <h2>Events</h2>
-                            <div class="ed_items">
-                                <div class="row justify-content-between">
-                                    <div class="col-5">
-                                        <a href="dashboard_events.php">
-                                            <div class="bpr_inner d-flex align-items-center">
-                                                <img class="img-fluid" src="images/bpr1.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
+                            <!-- <div class="gd_item">
+                                <h3>Group 1</h3>
+                                <div class="row row_group">
+                                    <div class="col-3">
+                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
+                                            <div class="mm_d_cards">
+                                                <img class="img-fluid" src="images/md-card1.png" alt="">
+                                                <div class="mdCard_content">
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
                                                 </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-5">
-                                        <a href="dashboard_events.php">
-                                            <div class="bpr_inner d-flex align-items-center">
-                                                <img class="img-fluid" src="images/bpr2.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
+                                    <div class="col-3">
+                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
+                                            <div class="mm_d_cards">
+                                                <img class="img-fluid" src="images/md-card12.png" alt="">
+                                                <div class="mdCard_content">
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
                                                 </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-5">
-                                        <a href="dashboard_events.php">
-                                            <div class="bpr_inner d-flex align-items-center">
-                                                <img class="img-fluid" src="images/bpr3.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
+                                    <div class="col-3">
+                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
+                                            <div class="mm_d_cards">
+                                                <img class="img-fluid" src="images/md-card11.png" alt="">
+                                                <div class="mdCard_content">
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
                                                 </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-5">
-                                        <a href="dashboard_events.php">
-                                            <div class="bpr_inner d-flex align-items-center">
-                                                <img class="img-fluid" src="images/bpr4.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="dashboard_events.php">
-                                            <div class="bpr_inner d-flex align-items-center">
-                                                <img class="img-fluid" src="images/bpr2.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="dashboard_events.php">
-                                            <div class="bpr_inner d-flex align-items-center">
-                                                <img class="img-fluid" src="images/bpr4.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="dashboard_events.php">
-                                            <div class="bpr_inner d-flex align-items-center">
-                                                <img class="img-fluid" src="images/bpr2.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="dashboard_events.php">
-                                            <div class="bpr_inner d-flex align-items-center">
-                                                <img class="img-fluid" src="images/bpr3.png" alt="">
-                                                <div class="bpr_desc">
-                                                    <h5>Here is the history of how 420 got associated with smoking
-                                                    </h5>
-                                                    <h6>March 13, 2024</h6>
-                                                    <p>Lorem ipsum simply dummy text is for using printing or
-                                                        pricing.
-                                                    </p>
+                                    <div class="col-3">
+                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
+                                            <div class="mm_d_cards">
+                                                <img class="img-fluid" src="images/md-card10.png" alt="">
+                                                <div class="mdCard_content">
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
                                                 </div>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="gd_item">
+                                <h3>Group 2</h3>
+                                <div class="row row_group">
+                                    <div class="col-3">
+                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
+                                            <div class="mm_d_cards">
+                                                <img class="img-fluid" src="images/md-card1.png" alt="">
+                                                <div class="mdCard_content">
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#groups_modal">
+                                            <div class="mm_d_cards">
+                                                <img class="img-fluid" src="images/md-card12.png" alt="">
+                                                <div class="mdCard_content">
+                                                    <h5>Name: Olivia</h5>
+                                                    <h5>Age: 29</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="nav-event" role="tabpanel"
+                        aria-labelledby="nav-event-tab" tabindex="0">
+                        <div class="event_dashboard">
+                            <h2>My Events</h2>
+                            <div class="suggestion_group mt-4">
+                                <div class="sg_head">
+                                    <div>
+                                        <!-- <h3>My Events</h3> -->
+                                        <!-- <p>Groups you might be interested in.</p> -->
+                                    </div>
+                                    <!-- <a href="#;">SEE ALL</a> -->
+                                </div>
+                                <div class="group-carousel owl-carousel owl-theme">
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img1.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                    <h5 class="me_label approv"><label>Approved</label></h5>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img2.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                    <h5 class="me_label reject"><label>Rejected</label></h5>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="sg_card">
+                                            <img src="images/sg_img4.svg" class="img-fluid" alt="">
+                                            <div class="sg_card_body">
+                                                <div class="scb3">
+                                                    <h4>Get high and become an astronaut</h4>
+                                                    <div class="scb_inner d-flex align-items-center">
+                                                       
+                                                        <h5 class="me_label"><label>Pending</label></h5>
+                                                    </div>
+                                                </div>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="dashboard_event_listing.php" class="button-container-2 ae_btn2 d-inline-flex ms-3 mt-5">
+                                    <span class="mas"><i class="fa-solid fa-arrow-left-long"></i>Back</span>
+                                    <button type="button" name="Hover"><i
+                                            class="fa-solid fa-arrow-left-long"></i>Back</button>
+                                </a>
+                            </div>
 
-                            </div>
-                             <div>
-                                <a href="dashboard_add_event.php" class="button-container-2 ae_btn2 d-inline-flex">
-                                    <span class="mas"><img src="images/calender_star.png" alt="">
-                                        Add Event</span>
-                                    <button type="button" name="Hover"><img src="images/calender_star.png" alt="">
-                                        Add Event</button>
-                                </a>
-                                <a href="dashboard_my_event.php" class="button-container-2 ae_btn2 d-inline-flex">
-                                    <span class="mas"><img src="images/calender_star.png" alt="">
-                                        My Event</span>
-                                    <button type="button" name="Hover"><img src="images/calender_star.png" alt="">
-                                    My Event</button>
-                                </a>
-                            </div>
                         </div>
 
                     </div>
@@ -2281,13 +2602,13 @@ $page = 'home';
             </div>
         </div>
     </div>
-    </div>
 </section>
 
 <?php
 include 'includes/footer.php';
 $page = 'dashboard';
 ?>
+
 
 <script>
 AOS.init({

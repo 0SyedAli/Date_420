@@ -54,6 +54,9 @@
                             <h5>Id:5793301 <i class="fa-solid fa-user"></i></h5>
                         </button>
                         <ul class="select-dropdown__list">
+                            <li data-value="2" class="select-dropdown__list-item"><a href="dashboard.php">My
+                                    Dashboard</a>
+                            </li>
                             <li data-value="2" class="select-dropdown__list-item"><a href="my-profile.php">My
                                     Profile</a>
                             </li>

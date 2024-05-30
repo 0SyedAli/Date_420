@@ -31,11 +31,10 @@ include 'includes/header_dash.php';
                             type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blogs</button>
                         <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat"
                             type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button> -->
-                            <button class="nav-link" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
+                        <button class="nav-link" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event"
                             type="button" role="tab" aria-controls="nav-event" aria-selected="false">Events</button>
-                        <button class="nav-link " id="nav-blog-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-blog" type="button" role="tab" aria-controls="nav-blog"
-                            aria-selected="false">Blogs</button>
+                        <button class="nav-link " id="nav-blog-tab" data-bs-toggle="tab" data-bs-target="#nav-blog"
+                            type="button" role="tab" aria-controls="nav-blog" aria-selected="false">Blogs</button>
                         <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat"
                             type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Chats</button>
                     </div>
@@ -50,7 +49,7 @@ include 'includes/header_dash.php';
                                     <div class="dash_slide_container">
                                         <h4><i class="fa-solid fa-heart"></i>Hot List</h4>
                                         <div class="item_dash_slides">
-                                            <div class="owl-carousel owl-theme">
+                                            <div class="ids-carousel owl-carousel owl-theme">
                                                 <div class="ids">
                                                     <a href="dashboard_my-matches.php">
                                                         <div class="mm_d_cards">
@@ -267,7 +266,12 @@ include 'includes/header_dash.php';
                                         </div>
                                     </div>
                                     <div class=" dash_search align-items-center gap-3 d-flex">
-                                        <a href="javascript:;" class="btn-theme2">Search</a>
+                                        <a href="javascript:;">
+                                            <div class="button-container-2 me-0">
+                                                <span class="mas">Search</span>
+                                                <button type="button" name="Hover">Search</button>
+                                            </div>
+                                        </a>
                                         <a href="javascript:;" class="ad_se">Advanced Search</a>
                                     </div>
                                 </div>
@@ -298,7 +302,12 @@ include 'includes/header_dash.php';
                                             </div>
                                         </div>
                                         <div class="text-center pt-2 pb-3">
-                                            <a href="dashboard_matches.php" class="btn-theme2">View All</a>
+                                            <a href="dashboard_matches.php">
+                                                <div class="button-container-2 d-inline-flex">
+                                                    <span class="mas">View All</span>
+                                                    <button type="button" name="Hover">View All</button>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <br>
@@ -315,7 +324,7 @@ include 'includes/header_dash.php';
                                                     profile details</a></li>
                                             <li><a href="dashboard_search.php"><i class="fa-solid fa-circle"></i>Change
                                                     matchmaking settings</a></li>
-                                            <li><a href="#;"><i class="fa-solid fa-circle"></i>Look
+                                            <li><a href="dashboard_chat.php"><i class="fa-solid fa-circle"></i>Look
                                                     who’s in</a></li>
                                         </ul>
                                         <h5>Feel free to participate in our community!</h5>
@@ -1467,9 +1476,14 @@ include 'includes/header_dash.php';
                                     </tbody>
                                 </table>
                                 <div class="d-flex justify-content-end align-items-center">
-                                    <a href="dashboard_matches.php"
+                                    <!-- <a href="dashboard_matches.php"
                                         class="btn btn-theme2 d-flex align-items-center gap-2">Search<i
-                                            class="fa-solid fa-arrow-right"></i></a>
+                                            class="fa-solid fa-arrow-right"></i></a> -->
+                                    <a href="dashboard_matches.php" class="button-container-2 d-flex">
+                                        <span class="mas">Search<i class="fa-solid fa-arrow-right ps-2"></i></span>
+                                        <button type="button" name="Hover">Search<i
+                                                class="fa-solid fa-arrow-right  ps-2"></i></button>
+                                    </a>
                                 </div>
                             </div>
                         </form>
@@ -1502,14 +1516,80 @@ include 'includes/header_dash.php';
                                     <div class="cag2">
                                         <textarea rows="9" id="" placeholder="Group description (200 words)"></textarea>
                                     </div>
-                                    <div class="search_people">
+                                    <!-- <div class="search_people">
                                         <input type="search" placeholder="Search people to add">
                                         <i class="fa-regular fa-magnifying-glass"></i>
+                                    </div> -->
+                                    <div class="dash_search_drop">
+                                        <div class="select-dropdown">
+                                            <div class="search_people select-dropdown__button">
+                                                <input type="search" placeholder="Search people to add">
+                                                <i class="fa-regular fa-magnifying-glass"></i>
+                                            </div>
+                                            <!-- <button role="button" data-value=""
+                                                class="dh_right select-dropdown__button">
+                                                <h5>Id:5793301 <i class="fa-solid fa-user"></i></h5>
+                                            </button> -->
+                                            <div class="select-dropdown__list">
+                                                <div class="dsd_item">
+                                                    <div data-value="1"
+                                                        class="select-dropdown__list-item dsd_item_inner"
+                                                        data-bs-toggle="modal" data-bs-target="#group_search"><a
+                                                            href="javascript:;"><i class="fa-solid fa-circle"></i>Lucas
+                                                            West</a>
+                                                    </div>
+                                                    <div data-value="2"
+                                                        class="select-dropdown__list-item dsd_item_inner"
+                                                        data-bs-toggle="modal" data-bs-target="#group_search"><a
+                                                            href="javascript:;"><i class="fa-solid fa-circle"></i>Lucas
+                                                            West</a>
+                                                    </div>
+                                                    <div data-value="3"
+                                                        class="select-dropdown__list-item dsd_item_inner"
+                                                        data-bs-toggle="modal" data-bs-target="#group_search"><a
+                                                            href="javascript:;"><i class="fa-solid fa-circle"></i>Danny
+                                                            Moore</a>
+                                                    </div>
+                                                    <div data-value="4"
+                                                        class="select-dropdown__list-item dsd_item_inner"
+                                                        data-bs-toggle="modal" data-bs-target="#group_search"><a
+                                                            href="javascript:;"><i class="fa-solid fa-circle"></i>Danny
+                                                            Moore</a>
+                                                    </div>
+                                                    <div data-value="4"
+                                                        class="select-dropdown__list-item dsd_item_inner"
+                                                        data-bs-toggle="modal" data-bs-target="#group_search"><a
+                                                            href="javascript:;"><i class="fa-solid fa-circle"></i>Jason
+                                                            Gutierrez</a></div>
+                                                    <div data-value="8"
+                                                        class="select-dropdown__list-item dsd_item_inner" data-bs-toggle="modal" data-bs-target="#group_search">
+                                                        <a href="javascript:;"><i class="fa-solid fa-circle"></i>Jason
+                                                            Gutierrez</a>
+                                                    </div>
+                                                    <div data-value="8"
+                                                        class="select-dropdown__list-item dsd_item_inner" data-bs-toggle="modal" data-bs-target="#group_search">
+                                                        <a href="javascript:;"><i class="fa-solid fa-circle"></i>Jesus
+                                                            Cooper</a>
+                                                    </div>
+                                                    <div data-value="8"
+                                                        class="select-dropdown__list-item dsd_item_inner" data-bs-toggle="modal" data-bs-target="#group_search">
+                                                        <a href="javascript:;"><i class="fa-solid fa-circle"></i>Jesus
+                                                            Cooper</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="cag_btn pt-5 pb-4 text-end">
-                                        <button type="submit" class="btn6" href="#;">
+                                        <!-- <button type="submit" class="btn6" href="#;">
                                             <img src="images/team.png" alt="">
-                                            Create Group</button>
+                                            Create Group</button> -->
+                                        <a href="dashboard_group.php" class="button-container-2 d-inline-flex">
+                                            <span class="mas"><img src="images/team.png" alt="">
+                                                Create Group</span>
+                                            <button type="button" name="Hover"><img src="images/team.png" alt="">
+                                                Create Group</button>
+                                        </a>
                                     </div>
                                 </form>
                             </div>
@@ -1645,47 +1725,66 @@ include 'includes/header_dash.php';
                                 </div>
 
                             </div>
-                            <a class="btn6" href="dashboard_add_event.php">
-                                <img src="images/calender_star.png" alt="">
-                                Add Event</a>
+                             <div>
+                                <a href="dashboard_add_event.php" class="button-container-2 ae_btn2 d-inline-flex">
+                                    <span class="mas"><img src="images/calender_star.png" alt="">
+                                        Add Event</span>
+                                    <button type="button" name="Hover"><img src="images/calender_star.png" alt="">
+                                        Add Event</button>
+                                </a>
+                                <a href="dashboard_my_event.php" class="button-container-2 ae_btn2 d-inline-flex">
+                                    <span class="mas"><img src="images/calender_star.png" alt="">
+                                        My Event</span>
+                                    <button type="button" name="Hover"><img src="images/calender_star.png" alt="">
+                                    My Event</button>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
                     <div class="tab-pane fade" id="nav-blog" role="tabpanel" aria-labelledby="nav-blog-tab"
                         tabindex="0">
                         <div class="blog_dashboard">
-                        <h2>Blogs</h2>
+                            <h2>Blogs</h2>
                             <div class="row">
                                 <div class="col-7">
                                     <div class="blog_post">
                                         <h3>Smoke and Poke will provide a cannabis enthusiast with a HIGH</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor ut dolore magna aliqua.</p>
-                                        <img src="images/blog_post1.png" alt="" class="blog_img1 img-fluid">
-                                        <div class="bp_detail">
-                                            <h4><i class="fa-solid fa-user"></i>By Admin</h4>
-                                            <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
-                                            </h4>
-                                            <h4>
-                                                <img class="img-fluid" src="images/comment.svg" alt="">
-                                                Leave a Comment
-                                            </h4>
-                                        </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                eiusmod tempor ut dolore magna aliqua.</p>
+                                            <a href="dashboard_blog_detail.php">
+                                                <img src="images/blog_post1.png" alt="" class="blog_img1 img-fluid">
+                                            </a>
+                                            <div class="bp_detail">
+                                                <h4><i class="fa-solid fa-user"></i>By Admin</h4>
+                                                <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
+                                                </h4>
+                                                <h4>
+                                                    <a href="dashboard_blog_detail.php">
+                                                        <img class="img-fluid" src="images/comment.svg" alt="">
+                                                        Leave a Comment
+                                                    </a>
+                                                </h4>
+                                            </div>
                                     </div>
                                     <div class="blog_post">
                                         <h3>Cannabis-oriented celebrations</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor ut dolore magna aliqua.</p>
-                                        <img src="images/blog_post2.png" alt="" class="blog_img1 img-fluid">
-                                        <div class="bp_detail">
-                                            <h4><i class="fa-solid fa-user"></i>By Admin</h4>
-                                            <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
-                                            </h4>
-                                            <h4>
-                                                <img class="img-fluid" src="images/comment.svg" alt="">
-                                                Leave a Comment
-                                            </h4>
-                                        </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                eiusmod tempor ut dolore magna aliqua.</p>
+                                            <a href="dashboard_blog_detail.php">
+                                                <img src="images/blog_post2.png" alt="" class="blog_img1 img-fluid">
+                                            </a>
+                                            <div class="bp_detail">
+                                                <h4><i class="fa-solid fa-user"></i>By Admin</h4>
+                                                <h4><i class="fa-regular fa-clock"></i>By Posted on March 13, 2024
+                                                </h4>
+                                                <h4>
+                                                    <a href="dashboard_blog_detail.php">
+                                                        <img class="img-fluid" src="images/comment.svg" alt="">
+                                                        Leave a Comment
+                                                    </a>
+                                                </h4>
+                                            </div>
                                     </div>
 
                                 </div>
